@@ -22,7 +22,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //定义计数器
     public static int count = 0;
     //定义随机数
-    int random;
+    public static int random;
     //定义视标对象
     GameObject sightingPost;
     //定义视标的显示时间
@@ -69,7 +69,6 @@ public class SightingPostLocationDeal : MonoBehaviour
     }
     void CloseShow()
     {
-        print("我执行了2");
         sightingPost.SetActive(false);
     }
 

@@ -5,6 +5,8 @@ using UnityEngine.XR;
 public class ResultDisplay : MonoBehaviour
 {
     public Material material;
+    //定义绘制结束标志
+    public static bool drawEnd = false;
     //定义视标显示状态数组(左眼)
     bool[] sightingPostDisplayStatus = new bool[72]
     {
@@ -68,7 +70,7 @@ public class ResultDisplay : MonoBehaviour
             }
             GL.End();
             GL.PopMatrix();
-
+            drawEnd = true;
 
         }
     }
