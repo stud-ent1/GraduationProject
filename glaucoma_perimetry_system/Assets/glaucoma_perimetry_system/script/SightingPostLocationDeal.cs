@@ -18,7 +18,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //定义背景板的位置
     float backgroundX, backgroundY, backgroundZ;
     //定义视标状态
-    bool[] sightingPostStatus = new bool[72];
+    //bool[] sightingPostStatus = new bool[72];
     //定义计数器
     public static int count = 0;
     //定义随机数
@@ -36,24 +36,24 @@ public class SightingPostLocationDeal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.frameCount % 120 == 0)
+        if (Time.frameCount % 120 == 0 )
         {
-            if (count != 72)
+            if (ThresholdCalculate.processConut != 54)
             {
+                print(count);
 
-
-                random = Random.Range(0, 72);
+                random = Random.Range(0, 71);
                 while (true)
                 {
-                    if (sightingPostStatus[random] == false)
+                    if (ThresholdCalculate.sightingPostStatus[random] == false)
                     {
-                        sightingPostStatus[random] = true;
+                        //ThresholdCalculate.sightingPostStatus[random] = true;
                         count++;
                         break;
                     }
                     else
                     {
-                        random = Random.Range(0, 72);
+                        random = Random.Range(0, 71);
                     }
                 }
             }
@@ -64,7 +64,6 @@ public class SightingPostLocationDeal : MonoBehaviour
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random,0], backgroundY + sightingPostLocation[random,1], backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
             //onClick = 0;
-
         }
     }
     void CloseShow()

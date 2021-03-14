@@ -8,7 +8,7 @@ public class ResultDisplay : MonoBehaviour
     //定义绘制结束标志
     public static bool drawEnd = false;
     //定义视标显示状态数组(左眼)
-    bool[] sightingPostDisplayStatus = new bool[72]
+    public static bool[] sightingPostDisplayStatus = new bool[72]
     {
         false,false,true,true,true,true,false,false,false,
         false,true,true,true,true,true,true,false,false,
@@ -38,22 +38,25 @@ public class ResultDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //之后可以改为协程
         OnPostRender();
     }
     void OnPostRender()
     {
-        if (SightingPostLocationDeal.count == 72)
+        if (ThresholdCalculate.processConut == 54)
         {
             //XRSettings.enabled = false;
-            GL.Clear(true, true, Color.black);
+            GL.Clear(true, true, Color.gray);
             GL.PushMatrix();
             //GL.LoadOrtho();
             material.SetPass(0);
             GL.Begin(GL.QUADS);
-            GL.Color(Color.white);
+
             for (var k = 0; k < SightingPostLocationDeal.sightingPostLocation.GetLength(0); k++)
             {
                 if (sightingPostDisplayStatus[k]==true) {
+                    float hd = 255*ThresholdCalculate.viewScale[k]/9;
+                    GL.Color(new Color(hd, hd, hd));
                     GL.Vertex3(SightingPostLocationDeal.sightingPostLocation[k, 0] - 0.5f, SightingPostLocationDeal.sightingPostLocation[k, 1] - 0.5f, 0);
 
                     GL.Vertex3(SightingPostLocationDeal.sightingPostLocation[k, 0] + 0.5f, SightingPostLocationDeal.sightingPostLocation[k, 1] - 0.5f, 0);
