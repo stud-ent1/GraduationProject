@@ -22,22 +22,7 @@ public class ThresholdCalculate : MonoBehaviour
     public static bool[] sightingPostStatus = new bool[72];
     //定义是否进行响应标志
     public static bool ifClick = false;
-    int spld ;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        spld = SightingPostLocationDeal.random;
-        if (processConut!=54&&sightingPostStatus[spld]==false)
-        {
-            thresholdCalculate();
-        }
-    }
+   
     private void OnMouseDown()
     {
         ifClick = true;
@@ -48,8 +33,9 @@ public class ThresholdCalculate : MonoBehaviour
     //如果进行响应，那么与其对应的视野阈值则不会降低，如果不响应，不进行响应，那么会先现判视野状态中的值，如果为true，则表示此位置为有效视野点，
     //且视野存在缺陷，此时视野阈值会降低，为了加快检测速度，他周围的八个位点也会降低（如果存在，⬆️⬇️⬅️➡️↖️↗️↙️↘️），但是，如果结果为flase，
     //那么此位置上为无效视野点，但其周围的八个位点可能为有效视野点，那么有效视野点又该不该降低呢？
-    void thresholdCalculate()
-    {
+   public static void thresholdCalculate( int spld)
+    {      
+        print("我执行了");
         if (ifClick==false&&ResultDisplay.sightingPostDisplayStatus[spld] ==true)
         {
             if (viewScale[spld] !=0)
@@ -177,5 +163,6 @@ public class ThresholdCalculate : MonoBehaviour
         }
         ifClick = false;
     }
+    
        
 }

@@ -43,18 +43,19 @@ public class ResultDisplay : MonoBehaviour
     }
     void OnPostRender()
     {
-        if (ThresholdCalculate.processConut == 54)
+        if (ThresholdCalculate.processConut >= 54)
         {
             //XRSettings.enabled = false;
             GL.Clear(true, true, Color.gray);
             GL.PushMatrix();
             //GL.LoadOrtho();
             material.SetPass(0);
-            GL.Begin(GL.QUADS);
+       
 
             for (var k = 0; k < SightingPostLocationDeal.sightingPostLocation.GetLength(0); k++)
             {
                 if (sightingPostDisplayStatus[k]==true) {
+                    GL.Begin(GL.QUADS);
                     float hd = 255*ThresholdCalculate.viewScale[k]/9;
                     GL.Color(new Color(hd, hd, hd));
                     GL.Vertex3(SightingPostLocationDeal.sightingPostLocation[k, 0] - 0.5f, SightingPostLocationDeal.sightingPostLocation[k, 1] - 0.5f, 0);
@@ -64,6 +65,7 @@ public class ResultDisplay : MonoBehaviour
                     GL.Vertex3(SightingPostLocationDeal.sightingPostLocation[k, 0] + 0.5f, SightingPostLocationDeal.sightingPostLocation[k, 1] + 0.5f, 0);
 
                     GL.Vertex3(SightingPostLocationDeal.sightingPostLocation[k, 0] - 0.5f, SightingPostLocationDeal.sightingPostLocation[k, 1] + 0.5f, 0);
+                    GL.End();
                 }
                 else
                 {
@@ -71,7 +73,7 @@ public class ResultDisplay : MonoBehaviour
                 }
 
             }
-            GL.End();
+        
             GL.PopMatrix();
             drawEnd = true;
 
