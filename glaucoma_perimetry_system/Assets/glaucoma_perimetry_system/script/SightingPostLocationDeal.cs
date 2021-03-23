@@ -27,7 +27,6 @@ public class SightingPostLocationDeal : MonoBehaviour
     GameObject sightingPost;
     //定义视标的显示时间
     float sightingPostDisplayTime = 0.2f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +67,9 @@ public class SightingPostLocationDeal : MonoBehaviour
             backgroundY = GameObject.Find("Background").GetComponent<Transform>().localPosition.y;
             backgroundZ = GameObject.Find("Background").GetComponent<Transform>().localPosition.z;
             sightingPost.SetActive(true);
+            //设置光点的变化
+            float colorFactor=ThresholdCalculate.viewScale[random];
+            sightingPost.GetComponent<MeshRenderer>().material.color = Color.blue;
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random, 0], backgroundY + sightingPostLocation[random, 1], backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
             ThresholdCalculate.thresholdCalculate(random);
