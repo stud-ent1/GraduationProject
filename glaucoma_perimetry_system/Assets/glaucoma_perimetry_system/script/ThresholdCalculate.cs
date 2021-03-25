@@ -6,14 +6,14 @@ public class ThresholdCalculate : MonoBehaviour
 {
     //定义视野阈值数组
     public static float[] viewScale = new float[72] {
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9,
-        9,9,9,9,9,9,9,9,9
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3,
+        3,3,3,3,3,3,3,3,3
     };
 
     //定义检测进度计数器
@@ -26,7 +26,6 @@ public class ThresholdCalculate : MonoBehaviour
     private void OnMouseDown()
     {
         ifClick = true;
-        print(processConut);
 
     }
     //对于此段逻辑处理的解释，首先有一个由一维数组组成的视野阈值数组viewScale，一个由一维数组组成的视标状态数组sightingPostDisplayStatus，
@@ -35,15 +34,15 @@ public class ThresholdCalculate : MonoBehaviour
     //那么此位置上为无效视野点，但其周围的八个位点可能为有效视野点，那么有效视野点又该不该降低呢？
    public static void thresholdCalculate( int spld)
     {      
-        print("我执行了");
         if (ifClick==false&&ResultDisplay.sightingPostDisplayStatus[spld] ==true)
         {
-            if (viewScale[spld] !=0)
+            if (viewScale[spld] >1)
             {
-                viewScale[spld] -= 3;
+                viewScale[spld] -= 1;
             }
             else
             {
+                viewScale[spld] -= 1;
                 sightingPostStatus[spld] = true;
                 processConut+=1;
             }
@@ -51,12 +50,13 @@ public class ThresholdCalculate : MonoBehaviour
 
             if (spld - 10 >= 0)
             {
-                if (viewScale[spld - 10]!=0)
+                if (viewScale[spld - 10]>1)
                 {
-                    viewScale[spld - 10] -= 3;
+                    viewScale[spld - 10] -= 1;
                 }
                 else
                 {
+                    viewScale[spld-10] -= 1;
                     sightingPostStatus[spld-10] = true;
                     processConut += 1;
                 }
@@ -64,12 +64,13 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld - 9 >= 0)
             {
-                if(viewScale[spld - 9]!=0)
+                if(viewScale[spld - 9]>1)
                 {
-                    viewScale[spld - 9] -= 3;
+                    viewScale[spld - 9] -= 1;
                 }
                 else
                 {
+                    viewScale[spld-9] -= 1;
                     sightingPostStatus[spld-9] = true;
                     processConut += 1;
                 }
@@ -77,12 +78,13 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld - 8 >= 0)
             {
-                if(viewScale[spld - 8] != 0)
+                if(viewScale[spld - 8] >1)
                 {
-                    viewScale[spld - 8] -= 3;
+                    viewScale[spld - 8] -= 1;
                 }
                 else
                 {
+                    viewScale[spld-8] -= 1;
                     sightingPostStatus[spld-8] = true;
                     processConut += 1;
                 }
@@ -90,24 +92,26 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld - 1 >= 0)
             {
-                if (viewScale[spld - 1] != 0)
+                if (viewScale[spld - 1] >1)
                 {
-                    viewScale[spld - 1] -= 3;
+                    viewScale[spld - 1] -= 1;
                 }
                 else
                 {
+                    viewScale[spld-1] -= 1;
                     sightingPostStatus[spld-1] = true;
                     processConut += 1;
                 }  
             }
             if (spld + 1 < viewScale.Length)
             {
-                if (viewScale[spld + 1]!=0)
+                if (viewScale[spld + 1]>1)
                 {
-                    viewScale[spld + 1] -= 3;
+                    viewScale[spld + 1] -= 1;
                 }
                 else
                 {
+                    viewScale[spld+1] -= 1;
                     sightingPostStatus[spld+1] = true;
                     processConut += 1;
                 }
@@ -115,12 +119,13 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld + 8 < viewScale.Length)
             {
-                if (viewScale[spld + 8]!=0)
+                if (viewScale[spld + 8]>1)
                 {
-                    viewScale[spld + 8] -= 3;
+                    viewScale[spld + 8] -= 1;
                 }
                 else
                 {
+                    viewScale[spld+8] -= 1;
                     sightingPostStatus[spld+8] = true;
                     processConut += 1;
                 }
@@ -128,12 +133,13 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld + 9 < viewScale.Length)
             {
-                if (viewScale[spld + 9]!=0)
+                if (viewScale[spld + 9]>1)
                 {
-                    viewScale[spld + 9] -= 3;
+                    viewScale[spld + 9] -= 1;
                 }
                 else
                 {
+                    viewScale[spld+9] -= 1;
                     sightingPostStatus[spld+9] = true;
                     processConut += 1;
                 }
@@ -141,12 +147,13 @@ public class ThresholdCalculate : MonoBehaviour
             }
             if (spld + 10 < viewScale.Length)
             {
-                if (viewScale[spld + 10]!=0)
+                if (viewScale[spld + 10]>1)
                 {
-                    viewScale[spld + 10] -= 3;
+                    viewScale[spld + 10] -= 1;
                 }
                 else
                 {
+                    viewScale[spld+10] -= 1;
                     sightingPostStatus[spld+10] = true;
                     processConut += 1;
                 }

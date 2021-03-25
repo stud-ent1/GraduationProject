@@ -56,7 +56,7 @@ public class ResultDisplay : MonoBehaviour
             {
                 if (sightingPostDisplayStatus[k]==true) {
                    
-                    float hd = ThresholdCalculate.viewScale[k]/9;
+                    float hd = ThresholdCalculate.viewScale[k]/3;
              
                     GL.Color(new Color(hd, hd, hd));
                 

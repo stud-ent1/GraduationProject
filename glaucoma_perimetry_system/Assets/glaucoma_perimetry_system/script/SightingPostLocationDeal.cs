@@ -69,7 +69,8 @@ public class SightingPostLocationDeal : MonoBehaviour
             sightingPost.SetActive(true);
             //设置光点的变化
             float colorFactor=ThresholdCalculate.viewScale[random];
-            sightingPost.GetComponent<MeshRenderer>().material.color = Color.blue;
+            print(colorFactor);
+            sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random, 0], backgroundY + sightingPostLocation[random, 1], backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
             ThresholdCalculate.thresholdCalculate(random);
