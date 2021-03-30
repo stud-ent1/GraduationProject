@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ChooseEye : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static bool ifClickButton = false;
+    public void chooseEye()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject button = EventSystem.current.currentSelectedGameObject;
+        switch (button.name)
+        {
+            case "LeftEyeButton":
+                ifClickButton = true;
+                break;
+            case "RightEyeButton":
+                ifClickButton = true;
+                break;
+                
+        }
     }
 }

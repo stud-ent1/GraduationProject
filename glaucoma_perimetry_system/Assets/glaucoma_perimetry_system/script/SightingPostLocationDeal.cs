@@ -25,12 +25,16 @@ public class SightingPostLocationDeal : MonoBehaviour
     public static int random;
     //定义视标对象
     GameObject sightingPost;
+    GameObject background;
     //定义视标的显示时间
     float sightingPostDisplayTime = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
         sightingPost = GameObject.Find("SightingPost");
+        background = GameObject.Find("Background");
+        sightingPost.SetActive(false);
+        background.SetActive(false);
     }
 
     // 此处遇到的问题表述一下，这个undate的作用是控制视标的位置，每当时间过去两秒或者ThresholdCalculate中的ifClick的状态为true时(即对视标作出了响应)，
@@ -39,8 +43,10 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-        if (Time.frameCount % 120 == 0 ||ThresholdCalculate.ifClick==true)
+        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || ThresholdCalculate.ifClick == true)
         {
+            sightingPost.SetActive(true);
+            background.SetActive(true);
             sightingPostMove();
         }
     }
