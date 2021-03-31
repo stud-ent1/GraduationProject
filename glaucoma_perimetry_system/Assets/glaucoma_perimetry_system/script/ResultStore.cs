@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class ResultStore : MonoBehaviour
 {
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         if (ResultDisplay.drawEnd==true)
         {
 			StartCoroutine(DrawResult());
 			ResultDisplay.drawEnd = false;
+
 		}
     }
 	IEnumerator DrawResult()

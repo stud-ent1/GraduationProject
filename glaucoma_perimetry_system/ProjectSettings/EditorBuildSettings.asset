@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/glaucoma_perimetry_system/scenes/VisualFieldInspection.unity
+    guid: 2512269a744df47f8a342c80d691211b
   m_configObjects: {}

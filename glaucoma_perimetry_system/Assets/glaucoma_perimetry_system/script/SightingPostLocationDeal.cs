@@ -25,14 +25,19 @@ public class SightingPostLocationDeal : MonoBehaviour
     public static int random;
     //定义视标对象
     GameObject sightingPost;
+    //定义背景对象
     GameObject background;
+    //定义根节点
+    public static GameObject root;
     //定义视标的显示时间
     float sightingPostDisplayTime = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
+
         sightingPost = GameObject.Find("SightingPost");
         background = GameObject.Find("Background");
+        root = GameObject.Find("MainCamera");
         sightingPost.SetActive(false);
         background.SetActive(false);
     }
@@ -47,6 +52,7 @@ public class SightingPostLocationDeal : MonoBehaviour
         {
             sightingPost.SetActive(true);
             background.SetActive(true);
+            root.transform.Find("Canvas").gameObject.SetActive(false);
             sightingPostMove();
         }
     }

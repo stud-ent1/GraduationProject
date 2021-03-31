@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 public class ResultDisplay : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class ResultDisplay : MonoBehaviour
     //定义绘制结束标志
     public static bool drawEnd = false;
     //定义视标显示状态数组(左眼)
-    public static bool[] sightingPostDisplayStatus = new bool[72]
+    public static bool[] sightingPostDisplayStatusLeft = new bool[72]
     {
         false,false,true,true,true,true,false,false,false,
         false,true,true,true,true,true,true,false,false,
@@ -20,27 +21,29 @@ public class ResultDisplay : MonoBehaviour
         false,false,true,true,true,true,false,false,false
     };
     //定义视标显示状态数组(右眼)
-   // bool[] sightingPostDisplayStatus = new bool[72]
-   //{
-   //     false,false,false,true,true,true,true,false,false,
-   //     false,false,true,true,true,true,true,true,false,
-   //     false,true,true,true,true,true,true,true,true,
-   //     true,true,true,true,true,true,true,true,true,
-   //     true,true,true,true,true,true,true,true,true,
-   //     false,true,true,true,true,true,true,true,true,
-   //     false,false,true,true,true,true,true,true,false,
-   //     false,false,false,true,true,true,true,false,false
-   //};
-    void Start()
-    {
-        
-    }
+    public static bool[] sightingPostDisplayStatusRight = new bool[72]
+   {
+        false,false,false,true,true,true,true,false,false,
+        false,false,true,true,true,true,true,true,false,
+        false,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        false,true,true,true,true,true,true,true,true,
+        false,false,true,true,true,true,true,true,false,
+        false,false,false,true,true,true,true,false,false
+   };
+    //定义视标显示状态数组
+    public static bool[] sightingPostDisplayStatus;
     // Update is called once per frame
     void Update()
     {
         //之后可以改为协程
         OnPostRender();
+
     }
+
+       
+
     void OnPostRender()
     {
         if (ThresholdCalculate.processConut >= 54)
