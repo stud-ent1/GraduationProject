@@ -39,7 +39,8 @@ public class ResultDisplay : MonoBehaviour
     {
         //之后可以改为协程
         OnPostRender();
-
+        
+       
     }
 
        
@@ -82,6 +83,9 @@ public class ResultDisplay : MonoBehaviour
             GL.End();
             GL.PopMatrix();
             drawEnd = true;
+            //重新加载场景
+            SceneManager.LoadScene(0);
+            //脚本数据还原
 
         }
     }

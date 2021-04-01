@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ChooseEye : MonoBehaviour
 {
     public static bool ifClickButton = false;
     public static GameObject button;
+    public static string eye = "";
     public void chooseEye()
     {
         button = EventSystem.current.currentSelectedGameObject;
@@ -14,13 +16,14 @@ public class ChooseEye : MonoBehaviour
         {
             case "LeftEyeButton":
                 ResultDisplay.sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatusLeft;
+                eye = "左眼";
                 ifClickButton = true;
                 break;
             case "RightEyeButton":
                 ResultDisplay.sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatusRight;
+                eye = "右眼";
                 ifClickButton = true;
                 break;
-                
         }
     }
 }
