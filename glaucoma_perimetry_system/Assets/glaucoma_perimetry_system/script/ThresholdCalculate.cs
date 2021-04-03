@@ -5,7 +5,20 @@ using UnityEngine;
 public class ThresholdCalculate : MonoBehaviour
 {
     //定义视野阈值数组
-    public static float[] viewScale = new float[72] {
+    public static float[] viewScale;
+
+    //定义检测进度计数器
+    public static int processConut;
+    //定义视标状态
+    public static bool[] sightingPostStatus ;
+    //定义是否进行响应标志
+    public static bool ifClick;
+    void Start()
+    {
+        processConut = 0;
+        sightingPostStatus = new bool[72];
+        ifClick = false;
+        viewScale= new float[72] {
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
@@ -15,14 +28,7 @@ public class ThresholdCalculate : MonoBehaviour
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3
     };
-
-    //定义检测进度计数器
-    public static int processConut=0;
-    //定义视标状态
-    public static bool[] sightingPostStatus = new bool[72];
-    //定义是否进行响应标志
-    public static bool ifClick = false;
-   
+    }
     private void OnMouseDown()
     {
         ifClick = true;

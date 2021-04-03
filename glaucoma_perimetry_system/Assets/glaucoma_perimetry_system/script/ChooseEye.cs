@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class ChooseEye : MonoBehaviour
 {
-    public static bool ifClickButton = false;
+    public static bool ifClickButton;
     public static GameObject button;
-    public static string eye = "";
+    public static string eye;
+    void Start()
+    {
+        ifClickButton = false;
+        eye = "";
+    }
     public void chooseEye()
     {
         button = EventSystem.current.currentSelectedGameObject;

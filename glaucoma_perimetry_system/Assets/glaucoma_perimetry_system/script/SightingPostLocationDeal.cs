@@ -20,7 +20,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //定义视标状态
     //bool[] sightingPostStatus = new bool[72];
     //定义计数器
-    public static int count = 0;
+    public static int count;
     //定义随机数
     public static int random;
     //定义视标对象
@@ -40,6 +40,7 @@ public class SightingPostLocationDeal : MonoBehaviour
         root = GameObject.Find("MainCamera");
         sightingPost.SetActive(false);
         background.SetActive(false);
+        count = 0;
     }
 
     // 此处遇到的问题表述一下，这个undate的作用是控制视标的位置，每当时间过去两秒或者ThresholdCalculate中的ifClick的状态为true时(即对视标作出了响应)，

@@ -7,7 +7,7 @@ public class ResultDisplay : MonoBehaviour
 {
     public Material material;
     //定义绘制结束标志
-    public static bool drawEnd = false;
+    public static bool drawEnd;
     //定义视标显示状态数组(左眼)
     public static bool[] sightingPostDisplayStatusLeft = new bool[72]
     {
@@ -34,14 +34,17 @@ public class ResultDisplay : MonoBehaviour
    };
     //定义视标显示状态数组
     public static bool[] sightingPostDisplayStatus;
+    void Start()
+    {
+        drawEnd = false;
+    }
     // Update is called once per frame
     void Update()
     {
         //之后可以改为协程
         OnPostRender();
-        
-       
-    }
+
+}
 
        
 
@@ -85,7 +88,6 @@ public class ResultDisplay : MonoBehaviour
             drawEnd = true;
             //重新加载场景
             SceneManager.LoadScene(0);
-            //脚本数据还原
 
         }
     }
