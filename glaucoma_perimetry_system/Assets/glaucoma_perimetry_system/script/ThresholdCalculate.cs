@@ -29,7 +29,7 @@ public class ThresholdCalculate : MonoBehaviour
         3,3,3,3,3,3,3,3,3
     };
     }
-    private void OnMouseDown()
+     void ActionUp()
     {
         ifClick = true;
 
