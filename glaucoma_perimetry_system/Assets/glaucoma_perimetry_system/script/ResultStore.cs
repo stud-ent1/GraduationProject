@@ -24,7 +24,9 @@ public class ResultStore : MonoBehaviour
 		tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
 		tex.Apply();
 		byte[] bytes = tex.EncodeToPNG();
-		File.WriteAllBytes(Application.dataPath + "/glaucoma_perimetry_system/result/"+ChooseEye.eye+"GrayScale.png", bytes);
+		File.WriteAllBytes(Application.dataPath +ChooseEye.eye+"GrayScale.png", bytes);
+        #if UNITY_EDITOR
 		UnityEditor.AssetDatabase.Refresh();
+        #endif
 	}
 }

@@ -12,12 +12,21 @@ public class ChooseEye : MonoBehaviour
     public static GameObject button;
     public static string eye;
     Text text;
+    public static bool ifCheckDone;
     void Start()
     {
         XRSettings.enabled = false;
         ifClickButton = false;
         eye = "";
         text = GameObject.Find("Canvas/Text").GetComponent<Text>();
+        if (ifCheckDone) {
+            GameObject.Find("Share").SetActive(true);
+            text.text = "请选择需要进行测试的眼睛,如需分享结果，请点击右上角";
+        }
+        else
+        {
+            GameObject.Find("Share").SetActive(false);
+        }
 
     }
     public void chooseEye()

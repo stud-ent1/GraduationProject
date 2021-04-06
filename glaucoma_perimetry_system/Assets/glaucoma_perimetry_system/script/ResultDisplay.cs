@@ -86,6 +86,7 @@ public class ResultDisplay : MonoBehaviour
             GL.End();
             GL.PopMatrix();
             drawEnd = true;
+            ChooseEye.ifCheckDone = true;
             //重新加载场景
             SceneManager.LoadScene(0);
 
