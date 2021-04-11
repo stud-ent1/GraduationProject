@@ -3,21 +3,27 @@ package com.DefaultCompany.glaucoma_perimetry_system;
 import com.unity3d.player.*;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.FileProvider;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import java.io.File;
-import java.util.logging.Logger;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 public class UnityPlayerActivity extends Activity
 {
@@ -48,10 +54,10 @@ public class UnityPlayerActivity extends Activity
         setContentView(mUnityPlayer);
         mUnityPlayer.requestFocus();
     }
-    public void onPress(String msg)
+    public void onPress(String msg) throws IOException {
 
-    {
-
+        mergeBitmap("/data/data/com.DefaultCompany.glaucoma_perimetry_system/files");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Intent shareInt = new Intent(Intent.ACTION_SEND);
 
         shareInt.setType("image/*");
@@ -61,7 +67,7 @@ public class UnityPlayerActivity extends Activity
 
         File shareFile = new File(getCacheDir(),"shareImage.png");
         Uri uri= FileProvider.getUriForFile(
-                this,UnityPlayerActivity.this.getPackageName(),shareFile
+                this,UnityPlayerActivity.this.getPackageName()+ ".fileprovider",shareFile
         );
         shareInt.putExtra(Intent.EXTRA_STREAM,uri);
 
@@ -72,7 +78,47 @@ public class UnityPlayerActivity extends Activity
         startActivity(Intent.createChooser(shareInt, getTitle()));
 
     }
-
+    private void mergeBitmap(String resourcePath) throws IOException {
+        Bitmap firstBitmap = BitmapFactory.decodeFile(resourcePath+"/左眼GrayScale.png");
+        System.out.println(firstBitmap);
+        Bitmap secondBitmap = BitmapFactory.decodeFile(resourcePath+"/右眼GrayScale.png");
+        System.out.println(secondBitmap);
+        Bitmap bitmap;
+        if(firstBitmap!=null&&secondBitmap!=null){
+        int w1 = firstBitmap.getWidth();
+        int h1 = firstBitmap.getHeight();
+        int w2 = secondBitmap.getWidth();
+        int h2 = secondBitmap.getHeight();
+        bitmap= Bitmap.createBitmap(w1+w2, h1 , firstBitmap.getConfig());
+        Paint paint=new Paint();
+        paint.setStyle(Paint.Style.FILL);
+        paint.setTextSize(100);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawRGB(255, 255, 255);
+        canvas.drawBitmap(firstBitmap, new Matrix(), null);
+        canvas.drawText("左眼",w1/3, h1/6*5, paint);
+        canvas.drawBitmap(secondBitmap, w1, 0, null);
+        canvas.drawText("右眼", w1+w2/2, h2/6*5, paint);
+        }
+        else {
+            bitmap=(firstBitmap!=null)?firstBitmap:secondBitmap;
+            int w = bitmap.getWidth();
+            int h = bitmap.getHeight();
+            bitmap= Bitmap.createBitmap(w,h , bitmap.getConfig());
+            String eye=(firstBitmap!=null)?"左眼":"右眼";
+            Paint paint=new Paint();
+            paint.setStyle(Paint.Style.FILL);
+            paint.setTextSize(100);
+            Canvas canvas = new Canvas(bitmap);
+            canvas.drawRGB(255, 255, 255);
+            canvas.drawBitmap(firstBitmap, new Matrix(), null);
+            canvas.drawText(eye,w/3, h/6*5, paint);
+        }
+        File path = new File(getCacheDir(),"shareImage.png");
+        OutputStream os = new FileOutputStream(path);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 50, os);
+        os.close();
+    }
     @Override protected void onNewIntent(Intent intent)
     {
         // To support deep linking, we need to make sure that the client can get access to
@@ -160,6 +206,9 @@ public class UnityPlayerActivity extends Activity
     @Override public boolean onKeyDown(int keyCode, KeyEvent event)   {
         if(KeyEvent.KEYCODE_HEADSETHOOK == keyCode){
             UnityPlayer.UnitySendMessage("LeftEyeButton", "ifStartCheck","");
+        }
+        if(KeyEvent.ACTION_UP==keyCode){
+            UnityPlayer.UnitySendMessage("Background", "ActionUp","");
         }
         return mUnityPlayer.injectEvent(event);
     }

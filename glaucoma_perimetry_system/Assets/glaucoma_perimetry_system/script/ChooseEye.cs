@@ -16,6 +16,7 @@ public class ChooseEye : MonoBehaviour
     void Start()
     {
         XRSettings.enabled = false;
+        SwitchTheScreen.switchVertical();
         ifClickButton = false;
         eye = "";
         text = GameObject.Find("Canvas/Text").GetComponent<Text>();
@@ -49,5 +50,6 @@ public class ChooseEye : MonoBehaviour
     {
         ifClickButton = true;
         XRSettings.enabled = true;
+        SwitchTheScreen.switchHorizontal();
     }
 }

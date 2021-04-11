@@ -52,7 +52,7 @@ public class ResultDisplay : MonoBehaviour
     {
         if (ThresholdCalculate.processConut >= 54)
         {
-            //XRSettings.enabled = false;
+            XRSettings.enabled = false;
             GL.Clear(true, true, Color.gray);
             GL.PushMatrix();
             //GL.LoadOrtho();
@@ -88,8 +88,12 @@ public class ResultDisplay : MonoBehaviour
             drawEnd = true;
             ChooseEye.ifCheckDone = true;
             //重新加载场景
-            SceneManager.LoadScene(0);
+            Invoke("restart", 2);
 
         }
+    }
+    private void restart()
+    {
+        SceneManager.LoadScene(0);
     }
 }

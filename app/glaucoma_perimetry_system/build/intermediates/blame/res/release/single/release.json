@@ -1,0 +1,262 @@
+[
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xxxhdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xxxhdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_ui_layer_with_portrait_support.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable_notification_icon_background.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xxxhdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xxxhdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xxhdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xxhdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xhdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable_rippleable.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable/rippleable.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_transition.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-mdpi-v4/transition.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-land_back_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-land/back_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_notification_template_icon_group.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-v21_notification_action.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-mdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi_app_banner.png.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/drawable-xhdpi/app_banner.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-nodpi-v4_vr_icon_back.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/827e57ce2b2a6ad0811175a54623dbbd/res/drawable-nodpi-v4/vr_icon_back.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xxhdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xxhdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_notification_action.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-ldrtl-v17_back_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-ldrtl-v17/back_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_notification_action_tombstone.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/mipmap-mdpi_app_icon.png.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-ldrtl-land-v17_settings_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-ldrtl-land-v17/settings_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_transition_view.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout/transition_view.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable_notification_tile_bg.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_transition.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-hdpi-v4/transition.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_settings_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout/settings_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-mdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable_notification_bg.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-ldrtl-land-v17_back_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-ldrtl-land-v17/back_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-land_settings_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-land/settings_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_ui_layer.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout/ui_layer.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-land_ui_layer_with_portrait_support.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-land/ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/xml_provider_paths.xml.flat",
+        "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-hdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_back_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout/back_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout_notification_template_part_time.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-nodpi-v4_vr_icon_front.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/827e57ce2b2a6ad0811175a54623dbbd/res/drawable-nodpi-v4/vr_icon_front.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/layout-ldrtl-v17_settings_button.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/layout-ldrtl-v17/settings_button.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-hdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-hdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-xhdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-xhdpi-v4/quantum_ic_close_white_24.png"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-v21_rippleable.xml.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/res/drawable-v21/rippleable.xml"
+    },
+    {
+        "merged": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    }
+]

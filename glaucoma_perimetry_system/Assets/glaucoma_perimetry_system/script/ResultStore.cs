@@ -20,11 +20,12 @@ public class ResultStore : MonoBehaviour
 		yield return new WaitForEndOfFrame();
 		int width = Screen.width;
 		int height = Screen.height;
+		string resultPath = "/data/data/com.DefaultCompany.glaucoma_perimetry_system/files";
 		Texture2D tex = new Texture2D(width, height, TextureFormat.RGB24, false);
 		tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
 		tex.Apply();
 		byte[] bytes = tex.EncodeToPNG();
-		File.WriteAllBytes(Application.dataPath +ChooseEye.eye+"GrayScale.png", bytes);
+		File.WriteAllBytes(resultPath +"/"+ChooseEye.eye+"GrayScale.png", bytes);
         #if UNITY_EDITOR
 		UnityEditor.AssetDatabase.Refresh();
         #endif

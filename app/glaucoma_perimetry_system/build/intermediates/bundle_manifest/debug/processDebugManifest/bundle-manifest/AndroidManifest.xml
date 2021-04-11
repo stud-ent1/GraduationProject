@@ -70,7 +70,7 @@
             android:value="true" />
         <meta-data
             android:name="unity.build-id"
-            android:value="d7e4bef0-a161-4d74-b05b-82fffe4e9d05" />
+            android:value="e010c710-9a7a-41b7-b1bb-fd1f5cc072d2" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />
@@ -80,6 +80,16 @@
         <meta-data
             android:name="unity.builder"
             android:value="\12369881379262" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.DefaultCompany.glaucoma_perimetry_system.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
     </application>
 
 </manifest>
