@@ -49,7 +49,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || ThresholdCalculate.ifClick == true)
+        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || Config.ifClick == true)
         {
             sightingPost.SetActive(true);
             background.SetActive(true);
@@ -80,6 +80,7 @@ public class SightingPostLocationDeal : MonoBehaviour
             backgroundY = GameObject.Find("Background").GetComponent<Transform>().localPosition.y;
             backgroundZ = GameObject.Find("Background").GetComponent<Transform>().localPosition.z;
             sightingPost.SetActive(true);
+            
             //设置光点的变化
             float colorFactor=ThresholdCalculate.viewScale[random];
             sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);

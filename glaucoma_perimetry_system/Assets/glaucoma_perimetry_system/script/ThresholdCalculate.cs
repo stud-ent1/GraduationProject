@@ -11,13 +11,10 @@ public class ThresholdCalculate : MonoBehaviour
     public static int processConut;
     //定义视标状态
     public static bool[] sightingPostStatus ;
-    //定义是否进行响应标志
-    public static bool ifClick;
     void Start()
     {
         processConut = 0;
         sightingPostStatus = new bool[72];
-        ifClick = false;
         viewScale= new float[72] {
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
@@ -31,7 +28,7 @@ public class ThresholdCalculate : MonoBehaviour
     }
      void ActionUp()
     {
-        ifClick = true;
+        Config.ifClick = true;
 
     }
     //对于此段逻辑处理的解释，首先有一个由一维数组组成的视野阈值数组viewScale，一个由一维数组组成的视标状态数组sightingPostDisplayStatus，
@@ -40,7 +37,7 @@ public class ThresholdCalculate : MonoBehaviour
     //那么此位置上为无效视野点，但其周围的八个位点可能为有效视野点，那么有效视野点又该不该降低呢？
    public static void thresholdCalculate( int spld)
     {      
-        if (ifClick==false&&ResultDisplay.sightingPostDisplayStatus[spld] ==true)
+        if (Config.ifClick ==false&&ResultDisplay.sightingPostDisplayStatus[spld] ==true)
         {
             if (viewScale[spld] >1)
             {
@@ -165,17 +162,34 @@ public class ThresholdCalculate : MonoBehaviour
                 }
                 
             }
-        }else if (ifClick == true&& ResultDisplay.sightingPostDisplayStatus[spld] == true)
+        }else if (Config.ifClick == true&& ResultDisplay.sightingPostDisplayStatus[spld] == true)
         {
             processConut += 1;
             sightingPostStatus[spld] = true;
         }
-        else if (ifClick == false && ResultDisplay.sightingPostDisplayStatus[spld] == false)
+        else if (Config.ifClick == false && ResultDisplay.sightingPostDisplayStatus[spld] == false)
         {
             sightingPostStatus[spld] = true;
         }
-        ifClick = false;
+        Config.ifClick = false;
     }
-    
-       
+    //对于固视丢失的定义是，在检查过程中，不时在生理盲点中央呈现高刺激强度的光标，如果受检者有反应，则记录一次固视丢失
+    //对应的逻辑就是，当视标状态为false时，若响应状态为true，则固视丢失次数+1
+    public static void checkSightingLose()
+    {
+        if (Config.ifSightingDisplay==false&& Config.ifClick==true)
+        {
+            Config.sightingLoseNumber += 1;
+        }
+    }
+    public static void checkFalseNegative()
+    {
+
+    }
+    public static void checkFalsePositive()
+    {
+
+    }
+
+
 }
