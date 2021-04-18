@@ -17,12 +17,6 @@ public class SightingPostLocationDeal : MonoBehaviour
     };
     //定义背景板的位置
     float backgroundX, backgroundY, backgroundZ;
-    //定义视标状态
-    //bool[] sightingPostStatus = new bool[72];
-    //定义计数器
-    public static int count;
-    //定义随机数
-    public static int random;
     //定义视标对象
     GameObject sightingPost;
     //定义背景对象
@@ -31,16 +25,19 @@ public class SightingPostLocationDeal : MonoBehaviour
     public static GameObject root;
     //定义视标的显示时间
     float sightingPostDisplayTime = 0.2f;
+    //定义随机数
+    public static int random;
+    //视标是否显示
+    public static bool ifSightingDisplay;
     // Start is called before the first frame update
     void Start()
     {
-
         sightingPost = GameObject.Find("SightingPost");
         background = GameObject.Find("Background");
         root = GameObject.Find("MainCamera");
         sightingPost.SetActive(false);
         background.SetActive(false);
-        count = 0;
+
     }
 
     // 此处遇到的问题表述一下，这个undate的作用是控制视标的位置，每当时间过去两秒或者ThresholdCalculate中的ifClick的状态为true时(即对视标作出了响应)，
@@ -49,26 +46,26 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || Config.ifClick == true)
+        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || ThresholdCalculate.ifClick)
         {
             sightingPost.SetActive(true);
             background.SetActive(true);
             root.transform.Find("Canvas").gameObject.SetActive(false);
+            ifSightingDisplay = true;
             sightingPostMove();
+            ifSightingDisplay = false;
         }
     }
     void sightingPostMove()
     {
-        if (ThresholdCalculate.processConut <= 54)
+        if (ThresholdCalculate.processConut <= 108)
         {
 
             random = Random.Range(0, 71);
             while (true)
             {
-                if (ThresholdCalculate.sightingPostStatus[random] == false)
+                if (ThresholdCalculate.sightingPostStatus[random] < 2)
                 {
-                    //ThresholdCalculate.sightingPostStatus[random] = true;
-                    count++;
                     break;
                 }
                 else
@@ -86,9 +83,13 @@ public class SightingPostLocationDeal : MonoBehaviour
             sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random, 0], backgroundY + sightingPostLocation[random, 1], backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
+
+            ThresholdCalculate.checkFalseNegative();
+
             ThresholdCalculate.thresholdCalculate(random);
         }
     }
+
     void CloseShow()
     {
         sightingPost.SetActive(false);

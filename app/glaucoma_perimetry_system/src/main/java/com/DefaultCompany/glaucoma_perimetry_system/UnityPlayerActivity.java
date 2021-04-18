@@ -28,7 +28,13 @@ import java.io.OutputStream;
 public class UnityPlayerActivity extends Activity
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
-
+    private float sightingLoseNumberL;
+    private float falseNegativeNumberL;
+    private float falsePositiveNumberL;
+    private float sightingLoseNumberR;
+    private float falseNegativeNumberR;
+    private float falsePositiveNumberR;
+    private String eye;
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
     // UnityPlayerActivity calls this from 'onCreate'
@@ -56,7 +62,7 @@ public class UnityPlayerActivity extends Activity
     }
     public void onPress(String msg) throws IOException {
 
-        mergeBitmap("/data/data/com.DefaultCompany.glaucoma_perimetry_system/files");
+        mergeBitmap();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Intent shareInt = new Intent(Intent.ACTION_SEND);
 
@@ -78,34 +84,55 @@ public class UnityPlayerActivity extends Activity
         startActivity(Intent.createChooser(shareInt, getTitle()));
 
     }
-    private void mergeBitmap(String resourcePath) throws IOException {
+    private void insertText(float sightingLoseNumber,float falseNegativeNumber,float falsePositiveNumber,String eye) throws IOException {
+        if (eye.equals("左眼")){
+            this.sightingLoseNumberL=sightingLoseNumber;
+            this.falseNegativeNumberL=falseNegativeNumber;
+            this.falsePositiveNumberL=falsePositiveNumber;
+            this.eye=eye;
+        }else {
+            this.sightingLoseNumberR=sightingLoseNumber;
+            this.falseNegativeNumberR=falseNegativeNumber;
+            this.falsePositiveNumberR=falsePositiveNumber;
+            this.eye=eye;
+        }
+
+    }
+    private void mergeBitmap() throws IOException {
+
+        String resourcePath="/data/data/com.DefaultCompany.glaucoma_perimetry_system/files";
         Bitmap firstBitmap = BitmapFactory.decodeFile(resourcePath+"/左眼GrayScale.png");
         System.out.println(firstBitmap);
         Bitmap secondBitmap = BitmapFactory.decodeFile(resourcePath+"/右眼GrayScale.png");
         System.out.println(secondBitmap);
         Bitmap bitmap;
         if(firstBitmap!=null&&secondBitmap!=null){
-        int w1 = firstBitmap.getWidth();
-        int h1 = firstBitmap.getHeight();
-        int w2 = secondBitmap.getWidth();
-        int h2 = secondBitmap.getHeight();
-        bitmap= Bitmap.createBitmap(w1+w2, h1 , firstBitmap.getConfig());
-        Paint paint=new Paint();
-        paint.setStyle(Paint.Style.FILL);
-        paint.setTextSize(100);
-        Canvas canvas = new Canvas(bitmap);
-        canvas.drawRGB(255, 255, 255);
-        canvas.drawBitmap(firstBitmap, new Matrix(), null);
-        canvas.drawText("左眼",w1/3, h1/6*5, paint);
-        canvas.drawBitmap(secondBitmap, w1, 0, null);
-        canvas.drawText("右眼", w1+w2/2, h2/6*5, paint);
+            int w1 = firstBitmap.getWidth();
+            int h1 = firstBitmap.getHeight();
+            int w2 = secondBitmap.getWidth();
+            int h2 = secondBitmap.getHeight();
+            bitmap= Bitmap.createBitmap(w1+w2, h1 , firstBitmap.getConfig());
+            Paint paint=new Paint();
+            paint.setStyle(Paint.Style.FILL);
+            paint.setTextSize(100);
+            Canvas canvas = new Canvas(bitmap);
+            canvas.drawRGB(255, 255, 255);
+            canvas.drawBitmap(firstBitmap, new Matrix(), null);
+            canvas.drawText("左眼",w1/3, h1/6*5, paint);
+            canvas.drawText("固视丢失率 "+sightingLoseNumberL/108,w1/6, h1/10, paint);
+            canvas.drawText("假阴性率"+falseNegativeNumberL/108,w1/6, h1/5, paint);
+            canvas.drawText("假阳性率"+falsePositiveNumberL/108,w1/6, h1/10*3, paint);
+            canvas.drawBitmap(secondBitmap, w1, 0, null);
+            canvas.drawText("右眼",w1+w2/3, h2/6*5, paint);
+            canvas.drawText("固视丢失率 "+sightingLoseNumberR/108,w1+w2/6, h2/10, paint);
+            canvas.drawText("假阴性率"+falseNegativeNumberR/108,w1+w2/6, h2/5, paint);
+            canvas.drawText("假阳性率"+falsePositiveNumberR/108,w1+w2/6, h2/10*3, paint);
         }
         else {
             bitmap=(firstBitmap!=null)?firstBitmap:secondBitmap;
             int w = bitmap.getWidth();
             int h = bitmap.getHeight();
             bitmap= Bitmap.createBitmap(w,h , bitmap.getConfig());
-            String eye=(firstBitmap!=null)?"左眼":"右眼";
             Paint paint=new Paint();
             paint.setStyle(Paint.Style.FILL);
             paint.setTextSize(100);
@@ -113,6 +140,17 @@ public class UnityPlayerActivity extends Activity
             canvas.drawRGB(255, 255, 255);
             canvas.drawBitmap(firstBitmap, new Matrix(), null);
             canvas.drawText(eye,w/3, h/6*5, paint);
+            if(eye.equals("左眼")){
+                canvas.drawText("固视丢失率 "+sightingLoseNumberL/108,w/6, h/10, paint);
+                canvas.drawText("假阴性率"+falseNegativeNumberL/108,w/6, h/5, paint);
+                canvas.drawText("假阳性率"+falsePositiveNumberL/108,w/6, h/10*3, paint);
+            }else {
+                canvas.drawText("固视丢失率 "+sightingLoseNumberR/108,w/6, h/10, paint);
+                canvas.drawText("假阴性率"+falseNegativeNumberR/108,w/6, h/5, paint);
+                canvas.drawText("假阳性率"+falsePositiveNumberR/108,w/6, h/10*3, paint);
+
+            }
+
         }
         File path = new File(getCacheDir(),"shareImage.png");
         OutputStream os = new FileOutputStream(path);

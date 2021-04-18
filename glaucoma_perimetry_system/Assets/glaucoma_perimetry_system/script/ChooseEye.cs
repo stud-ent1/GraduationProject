@@ -10,15 +10,18 @@ public class ChooseEye : MonoBehaviour
 {
     public static bool ifClickButton;
     public static GameObject button;
-    public static string eye;
+   
     Text text;
     public static bool ifCheckDone;
+    //定义选择测试的眼睛
+    public static string eye;
+
     void Start()
     {
         XRSettings.enabled = false;
         SwitchTheScreen.switchVertical();
         ifClickButton = false;
-        eye = "";
+        
         text = GameObject.Find("Canvas/Text").GetComponent<Text>();
         if (ifCheckDone) {
             GameObject.Find("Share").SetActive(true);
@@ -36,11 +39,11 @@ public class ChooseEye : MonoBehaviour
         switch (button.name)
         {
             case "LeftEyeButton":
-                ResultDisplay.sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatusLeft;
+                ResultDisplay.sightingPostDisplayStatus = Config.sightingPostDisplayStatusLeft;
                 eye = "左眼";
                 break;
             case "RightEyeButton":
-                ResultDisplay.sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatusRight;
+                ResultDisplay.sightingPostDisplayStatus = Config.sightingPostDisplayStatusRight;
                 eye = "右眼";
                 break;
         }

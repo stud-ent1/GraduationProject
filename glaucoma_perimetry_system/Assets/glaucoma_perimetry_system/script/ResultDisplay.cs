@@ -8,32 +8,10 @@ public class ResultDisplay : MonoBehaviour
     public Material material;
     //定义绘制结束标志
     public static bool drawEnd;
-    //定义视标显示状态数组(左眼)
-    public static bool[] sightingPostDisplayStatusLeft = new bool[72]
-    {
-        false,false,true,true,true,true,false,false,false,
-        false,true,true,true,true,true,true,false,false,
-        true,true,true,true,true,true,true,true,false,
-        true,true,true,true,true,true,true,true,true,
-        true,true,true,true,true,true,true,true,true,
-        true,true,true,true,true,true,true,true,false,
-        false,true,true,true,true,true,true,false,false,
-        false,false,true,true,true,true,false,false,false
-    };
-    //定义视标显示状态数组(右眼)
-    public static bool[] sightingPostDisplayStatusRight = new bool[72]
-   {
-        false,false,false,true,true,true,true,false,false,
-        false,false,true,true,true,true,true,true,false,
-        false,true,true,true,true,true,true,true,true,
-        true,true,true,true,true,true,true,true,true,
-        true,true,true,true,true,true,true,true,true,
-        false,true,true,true,true,true,true,true,true,
-        false,false,true,true,true,true,true,true,false,
-        false,false,false,true,true,true,true,false,false
-   };
+
     //定义视标显示状态数组
     public static bool[] sightingPostDisplayStatus;
+
     void Start()
     {
         drawEnd = false;
@@ -50,7 +28,7 @@ public class ResultDisplay : MonoBehaviour
 
     void OnPostRender()
     {
-        if (ThresholdCalculate.processConut >= 54)
+        if (ThresholdCalculate.processConut >= 108)
         {
             XRSettings.enabled = false;
             GL.Clear(true, true, Color.gray);
@@ -87,10 +65,19 @@ public class ResultDisplay : MonoBehaviour
             GL.PopMatrix();
             drawEnd = true;
             ChooseEye.ifCheckDone = true;
+            sendMerge();
             //重新加载场景
             Invoke("restart", 2);
 
         }
+    }
+    //调用android mergeBitmap()合并结果，并传递固视丢失次数，假阴性次数，假阳性次数，以及测试眼睛
+    public void sendMerge()
+    {
+
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        jo.Call("insertText", ThresholdCalculate.sightingLoseNumber, ThresholdCalculate.falseNegativeNumber, ThresholdCalculate.falsePositiveNumber, ChooseEye.eye );
     }
     private void restart()
     {

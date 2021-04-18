@@ -9,13 +9,23 @@ public class ThresholdCalculate : MonoBehaviour
 
     //定义检测进度计数器
     public static int processConut;
-    //定义视标状态
-    public static bool[] sightingPostStatus ;
+
+    public static float sightingLoseNumber;
+    public static float falseNegativeNumber;
+    public static float falsePositiveNumber;
+    public static float[] sightingPostStatus;
+    public static bool ifClick;
+    public static bool[] sightingPostDisplayStatus;
     void Start()
     {
         processConut = 0;
-        sightingPostStatus = new bool[72];
-        viewScale= new float[72] {
+        sightingLoseNumber = Config.sightingLoseNumber;
+        falseNegativeNumber = Config.falseNegativeNumber;
+        falsePositiveNumber = Config.falsePositiveNumber;
+        sightingPostStatus = Config.sightingPostStatus;
+       
+
+        viewScale = new float[72] {
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
@@ -26,9 +36,14 @@ public class ThresholdCalculate : MonoBehaviour
         3,3,3,3,3,3,3,3,3
     };
     }
-     void ActionUp()
+    private void Update()
     {
-        Config.ifClick = true;
+        checkSightingLose();
+        checkFalsePositive();
+    }
+    void ActionUp()
+    {
+        ifClick = true;
 
     }
     //对于此段逻辑处理的解释，首先有一个由一维数组组成的视野阈值数组viewScale，一个由一维数组组成的视标状态数组sightingPostDisplayStatus，
@@ -36,8 +51,9 @@ public class ThresholdCalculate : MonoBehaviour
     //且视野存在缺陷，此时视野阈值会降低，为了加快检测速度，他周围的八个位点也会降低（如果存在，⬆️⬇️⬅️➡️↖️↗️↙️↘️），但是，如果结果为flase，
     //那么此位置上为无效视野点，但其周围的八个位点可能为有效视野点，那么有效视野点又该不该降低呢？
    public static void thresholdCalculate( int spld)
-    {      
-        if (Config.ifClick ==false&&ResultDisplay.sightingPostDisplayStatus[spld] ==true)
+    {
+        sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatus;
+        if (ifClick == false&&sightingPostDisplayStatus[spld])
         {
             if (viewScale[spld] >1)
             {
@@ -46,7 +62,7 @@ public class ThresholdCalculate : MonoBehaviour
             else
             {
                 viewScale[spld] -= 1;
-                sightingPostStatus[spld] = true;
+                sightingPostStatus[spld] +=1;
                 processConut+=1;
             }
 
@@ -60,7 +76,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld-10] -= 1;
-                    sightingPostStatus[spld-10] = true;
+                    sightingPostStatus[spld-10] += 1;
                     processConut += 1;
                 }
                
@@ -74,7 +90,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld-9] -= 1;
-                    sightingPostStatus[spld-9] = true;
+                    sightingPostStatus[spld-9] += 1;
                     processConut += 1;
                 }
                 
@@ -88,7 +104,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld-8] -= 1;
-                    sightingPostStatus[spld-8] = true;
+                    sightingPostStatus[spld-8] += 1;
                     processConut += 1;
                 }
                
@@ -102,7 +118,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld-1] -= 1;
-                    sightingPostStatus[spld-1] = true;
+                    sightingPostStatus[spld-1] += 1;
                     processConut += 1;
                 }  
             }
@@ -115,7 +131,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld+1] -= 1;
-                    sightingPostStatus[spld+1] = true;
+                    sightingPostStatus[spld+1] += 1;
                     processConut += 1;
                 }
                
@@ -129,7 +145,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld+8] -= 1;
-                    sightingPostStatus[spld+8] = true;
+                    sightingPostStatus[spld+8] += 1;
                     processConut += 1;
                 }
                
@@ -143,7 +159,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld+9] -= 1;
-                    sightingPostStatus[spld+9] = true;
+                    sightingPostStatus[spld+9] += 1;
                     processConut += 1;
                 }
                 
@@ -157,38 +173,46 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     viewScale[spld+10] -= 1;
-                    sightingPostStatus[spld+10] = true;
+                    sightingPostStatus[spld+10] += 1;
                     processConut += 1;
                 }
                 
             }
-        }else if (Config.ifClick == true&& ResultDisplay.sightingPostDisplayStatus[spld] == true)
+        }else if (ifClick && sightingPostDisplayStatus[spld] == true)
         {
             processConut += 1;
-            sightingPostStatus[spld] = true;
+            sightingPostStatus[spld] += 1;
         }
-        else if (Config.ifClick == false && ResultDisplay.sightingPostDisplayStatus[spld] == false)
+        else if (ifClick == false && sightingPostDisplayStatus[spld] == false)
         {
-            sightingPostStatus[spld] = true;
+            sightingPostStatus[spld] += 1;
         }
-        Config.ifClick = false;
+        ifClick = false;
     }
     //对于固视丢失的定义是，在检查过程中，不时在生理盲点中央呈现高刺激强度的光标，如果受检者有反应，则记录一次固视丢失
-    //对应的逻辑就是，当视标状态为false时，若响应状态为true，则固视丢失次数+1
-    public static void checkSightingLose()
+    //对应的逻辑就是，当视标状态为true时，若响应状态为true，但是sightingPostDisplayStatus状态为false，则固视丢失次数+1
+    void checkSightingLose()
     {
-        if (Config.ifSightingDisplay==false&& Config.ifClick==true)
-        {
-            Config.sightingLoseNumber += 1;
+        if (SightingPostLocationDeal.ifSightingDisplay&& ifClick&&sightingPostDisplayStatus[SightingPostLocationDeal.random] ==false) {
+            sightingLoseNumber += 1;
         }
     }
+    //对于假阴性的定义是，当患者对于某一位置的光标刺激没有反应，此之前位置上更弱的刺激却能看见，则记为假阴性
+    //对应的逻辑就是，当一个点响应次数(sightingPostStatus[random])>0,且响应状态为false
     public static void checkFalseNegative()
     {
-
+        if (ifClick==false&&sightingPostStatus[SightingPostLocationDeal.random]>0) {
+            falseNegativeNumber += 1;
+        }
     }
-    public static void checkFalsePositive()
+    //对于假阳性的定义是，当患者在没有光标刺激存在时却表示能看见，则记录为假阳性
+    //对应的逻辑就是，当视标状态为false时，若响应状态为true，则假阳性次数+1
+     void checkFalsePositive()
     {
-
+        if (SightingPostLocationDeal.ifSightingDisplay == false && ifClick )
+        {
+            falsePositiveNumber += 1;
+        }
     }
 
 

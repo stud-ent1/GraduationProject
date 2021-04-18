@@ -6,23 +6,36 @@ public class Config : MonoBehaviour
 {
     //配置文件
     //固视丢失次数
-    public static int sightingLoseNumber;
+    public static int sightingLoseNumber = 0;
     //假阴性次数
-    public static int falseNegativeNumber;
+    public static int falseNegativeNumber = 0;
     //假阳性次数
-    public static int falsePositiveNumber;
-    //视标是否显示
-    public static bool ifSightingDisplay;
-    //是否对视标进行响应
-    public static bool ifClick;
-    //初始化
-    void Start()
+    public static int falsePositiveNumber = 0;
+    //定义视标状态
+    public static float[] sightingPostStatus = new float[72];
+    //定义视标显示状态数组(左眼)
+    public static bool[] sightingPostDisplayStatusLeft = new bool[72]
     {
-        sightingLoseNumber = 0;
-        falseNegativeNumber = 0;
-        falsePositiveNumber = 0;
-        ifSightingDisplay = false;
-        ifClick = false;
-    }
+        false,false,true,true,true,true,false,false,false,
+        false,true,true,true,true,true,true,false,false,
+        true,true,true,true,true,true,true,true,false,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,false,
+        false,true,true,true,true,true,true,false,false,
+        false,false,true,true,true,true,false,false,false
+    };
+    //定义视标显示状态数组(右眼)
+    public static bool[] sightingPostDisplayStatusRight = new bool[72]
+   {
+        false,false,false,true,true,true,true,false,false,
+        false,false,true,true,true,true,true,true,false,
+        false,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        false,true,true,true,true,true,true,true,true,
+        false,false,true,true,true,true,true,true,false,
+        false,false,false,true,true,true,true,false,false
+   };
 
 }
