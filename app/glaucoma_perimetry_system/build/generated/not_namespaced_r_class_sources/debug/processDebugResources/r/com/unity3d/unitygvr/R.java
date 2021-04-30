@@ -35,29 +35,29 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int back_button = 0x7f050006;
-        public static final int divider = 0x7f050009;
-        public static final int transition_bottom_frame = 0x7f05001e;
-        public static final int transition_frame = 0x7f05001f;
-        public static final int transition_icon = 0x7f050020;
-        public static final int transition_question_text = 0x7f050021;
-        public static final int transition_switch_action = 0x7f050022;
-        public static final int transition_text = 0x7f050023;
-        public static final int transition_top_frame = 0x7f050024;
-        public static final int ui_alignment_marker = 0x7f050025;
-        public static final int ui_back_button = 0x7f050026;
-        public static final int ui_back_button_holder = 0x7f050027;
-        public static final int ui_settings_button = 0x7f050028;
-        public static final int ui_settings_button_holder = 0x7f050029;
+        public static final int back_button = 0x7f050007;
+        public static final int divider = 0x7f05000c;
+        public static final int transition_bottom_frame = 0x7f05002f;
+        public static final int transition_frame = 0x7f050030;
+        public static final int transition_icon = 0x7f050031;
+        public static final int transition_question_text = 0x7f050032;
+        public static final int transition_switch_action = 0x7f050033;
+        public static final int transition_text = 0x7f050034;
+        public static final int transition_top_frame = 0x7f050035;
+        public static final int ui_alignment_marker = 0x7f050036;
+        public static final int ui_back_button = 0x7f050037;
+        public static final int ui_back_button_holder = 0x7f050038;
+        public static final int ui_settings_button = 0x7f050039;
+        public static final int ui_settings_button_holder = 0x7f05003a;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int back_button = 0x7f070000;
-        public static final int settings_button = 0x7f070007;
-        public static final int transition_view = 0x7f070008;
-        public static final int ui_layer = 0x7f070009;
-        public static final int ui_layer_with_portrait_support = 0x7f07000a;
+        public static final int back_button = 0x7f070002;
+        public static final int settings_button = 0x7f07000b;
+        public static final int transition_view = 0x7f07000c;
+        public static final int ui_layer = 0x7f07000d;
+        public static final int ui_layer_with_portrait_support = 0x7f07000e;
     }
     public static final class string {
         private string() {}

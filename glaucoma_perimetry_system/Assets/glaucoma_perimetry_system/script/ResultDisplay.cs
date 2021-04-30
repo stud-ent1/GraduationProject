@@ -11,7 +11,7 @@ public class ResultDisplay : MonoBehaviour
 
     //定义视标显示状态数组
     public static bool[] sightingPostDisplayStatus;
-
+     
     void Start()
     {
         drawEnd = false;
@@ -19,16 +19,12 @@ public class ResultDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //之后可以改为协程
         OnPostRender();
 
 }
-
-       
-
     void OnPostRender()
     {
-        if (ThresholdCalculate.processConut >= 108)
+        if (ThresholdCalculate.processConut > 108)
         {
             XRSettings.enabled = false;
             GL.Clear(true, true, Color.gray);
@@ -65,19 +61,27 @@ public class ResultDisplay : MonoBehaviour
             GL.PopMatrix();
             drawEnd = true;
             ChooseEye.ifCheckDone = true;
-            sendMerge();
+            updateMap();
             //重新加载场景
-            Invoke("restart", 2);
+            restart();
+            jumpToMain();
 
         }
     }
     //调用android mergeBitmap()合并结果，并传递固视丢失次数，假阴性次数，假阳性次数，以及测试眼睛
-    public void sendMerge()
+    public void updateMap()
     {
 
         AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
-        jo.Call("insertText", ThresholdCalculate.sightingLoseNumber, ThresholdCalculate.falseNegativeNumber, ThresholdCalculate.falsePositiveNumber, ChooseEye.eye );
+        jo.Call("updateMap", ThresholdCalculate.sightingLoseNumber, ThresholdCalculate.falseNegativeNumber, ThresholdCalculate.falsePositiveNumber, ChooseEye.eye);
+    }
+    public void jumpToMain()
+    {
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        jo.Call("jumpToMain");
+
     }
     private void restart()
     {

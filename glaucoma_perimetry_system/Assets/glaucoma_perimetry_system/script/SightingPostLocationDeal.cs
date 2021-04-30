@@ -46,14 +46,29 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0 || ThresholdCalculate.ifClick)
+        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0)
         {
-            sightingPost.SetActive(true);
-            background.SetActive(true);
-            root.transform.Find("Canvas").gameObject.SetActive(false);
-            ifSightingDisplay = true;
-            sightingPostMove();
-            ifSightingDisplay = false;
+            checking();
+        }
+    }
+    //更新逻辑：加速，点击按钮可以调用检测，每隔2秒也可以调用检测，当检测进行时，如又遇到了检测请求，提供两种策略，一是判断当前的检测状态，如果还未结束，就不进行执行，
+    //二是利用协程，每次请求都响应，但是会等待到检测结束，才执行响应的请求，但这样可能会造成堆积又或是直接抛出异常，故先采用第一种方式
+
+    //点击耳机对应时进行调用
+    void quicken()
+    {
+        checking();
+    }
+    //判断是否正在进行一次检测，如果进行，则不调用
+    void checking()
+    {
+        if (ifSightingDisplay ==false)
+        {
+        sightingPost.SetActive(true);
+        background.SetActive(true);
+        ifSightingDisplay = true;
+        sightingPostMove();
+        ifSightingDisplay = false;
         }
     }
     void sightingPostMove()
@@ -77,19 +92,16 @@ public class SightingPostLocationDeal : MonoBehaviour
             backgroundY = GameObject.Find("Background").GetComponent<Transform>().localPosition.y;
             backgroundZ = GameObject.Find("Background").GetComponent<Transform>().localPosition.z;
             sightingPost.SetActive(true);
-            
             //设置光点的变化
             float colorFactor=ThresholdCalculate.viewScale[random];
             sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random, 0], backgroundY + sightingPostLocation[random, 1], backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
-
             ThresholdCalculate.checkFalseNegative();
-
             ThresholdCalculate.thresholdCalculate(random);
         }
     }
-
+    //设置视标不可见
     void CloseShow()
     {
         sightingPost.SetActive(false);

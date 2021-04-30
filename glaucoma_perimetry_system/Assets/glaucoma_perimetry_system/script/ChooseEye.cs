@@ -9,50 +9,69 @@ using UnityEngine.XR;
 public class ChooseEye : MonoBehaviour
 {
     public static bool ifClickButton;
-    public static GameObject button;
-   
-    Text text;
     public static bool ifCheckDone;
-    //定义选择测试的眼睛
+    //定义视标显示状态数组(左眼)
+    public static bool[] sightingPostDisplayStatusLeft = new bool[72]
+    {
+        false,false,true,true,true,true,false,false,false,
+        false,true,true,true,true,true,true,false,false,
+        true,true,true,true,true,true,true,true,false,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,false,
+        false,true,true,true,true,true,true,false,false,
+        false,false,true,true,true,true,false,false,false
+    };
+    //定义视标显示状态数组(右眼)
+    public static bool[] sightingPostDisplayStatusRight = new bool[72]
+   {
+        false,false,false,true,true,true,true,false,false,
+        false,false,true,true,true,true,true,true,false,
+        false,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        true,true,true,true,true,true,true,true,true,
+        false,true,true,true,true,true,true,true,true,
+        false,false,true,true,true,true,true,true,false,
+        false,false,false,true,true,true,true,false,false
+   };
     public static string eye;
-
+    //初始化
     void Start()
     {
+        //设置vr模式为false
         XRSettings.enabled = false;
+        //设置竖屏
         SwitchTheScreen.switchVertical();
+        //设置是否点击按钮为false
         ifClickButton = false;
-        
-        text = GameObject.Find("Canvas/Text").GetComponent<Text>();
-        if (ifCheckDone) {
-            GameObject.Find("Share").SetActive(true);
-            text.text = "请选择需要进行测试的眼睛,如需分享结果，请点击右上角";
-        }
-        else
-        {
-            GameObject.Find("Share").SetActive(false);
-        }
-
     }
-    public void chooseEye()
+    //监听选择的按钮
+    void chooseEye(string eye)
     {
-        button = EventSystem.current.currentSelectedGameObject;
-        switch (button.name)
+        switch (eye)
         {
-            case "LeftEyeButton":
-                ResultDisplay.sightingPostDisplayStatus = Config.sightingPostDisplayStatusLeft;
-                eye = "左眼";
+            case "左眼":
+                ResultDisplay.sightingPostDisplayStatus = sightingPostDisplayStatusLeft;
+                print("/////////////////////////////////////////");
+                ChooseEye.eye = eye;
                 break;
-            case "RightEyeButton":
-                ResultDisplay.sightingPostDisplayStatus = Config.sightingPostDisplayStatusRight;
-                eye = "右眼";
+            case "右眼":
+                ResultDisplay.sightingPostDisplayStatus = sightingPostDisplayStatusRight;
+                print("/////////////////////////////////////////");
+                ChooseEye.eye = eye;
+                break;
+            default:
                 break;
         }
-        text.text = "请点击耳机暂停/开始键,开始进行检测";
     }
     void ifStartCheck()
     {
+        //已经选择的按钮
         ifClickButton = true;
+        //设置vr模式为true
         XRSettings.enabled = true;
+        //设置横屏
         SwitchTheScreen.switchHorizontal();
+
     }
 }

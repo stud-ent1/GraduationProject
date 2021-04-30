@@ -61,6 +61,7 @@ drawable rippleable
 drawable transition
 drawable vr_icon_back
 drawable vr_icon_front
+id Pid
 id action_container
 id action_divider
 id action_image
@@ -69,26 +70,42 @@ id actions
 id async
 id back_button
 id blocking
+id choice_layout
 id chronometer
+id content
 id divider
+id falseNegative
+id falsePositive
 id forever
+id grayImg
 id icon
 id icon_group
 id info
 id italic
+id leftEye
 id line1
 id line3
+id news_text
+id no_send
 id normal
+id notFind
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id result_layout
+id rightEye
 id right_icon
 id right_side
+id send_id
+id setting_text
+id share
+id sightingLose
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textHelp
 id time
 id title
 id transition_bottom_frame
@@ -105,7 +122,11 @@ id ui_settings_button
 id ui_settings_button_holder
 id unitySurfaceView
 integer status_bar_notification_info_maxnum
+layout activity_login
+layout activity_main
 layout back_button
+layout fragment_choice
+layout fragment_result
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -165,4 +186,5 @@ styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchSt
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+xml network_security_config
 xml provider_paths

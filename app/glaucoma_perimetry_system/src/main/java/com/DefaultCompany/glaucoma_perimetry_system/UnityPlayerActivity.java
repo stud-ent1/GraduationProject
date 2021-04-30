@@ -3,38 +3,23 @@ package com.DefaultCompany.glaucoma_perimetry_system;
 import com.unity3d.player.*;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Paint;
 import android.graphics.PixelFormat;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.FileProvider;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class UnityPlayerActivity extends Activity
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
-    private float sightingLoseNumberL;
-    private float falseNegativeNumberL;
-    private float falsePositiveNumberL;
-    private float sightingLoseNumberR;
-    private float falseNegativeNumberR;
-    private float falsePositiveNumberR;
-    private String eye;
+    private Map<String,Object> map=new HashMap<String, Object>();
+    private GlobalVal globalVal;
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
     // UnityPlayerActivity calls this from 'onCreate'
@@ -55,107 +40,38 @@ public class UnityPlayerActivity extends Activity
 
         String cmdLine = updateUnityCommandLineArguments(getIntent().getStringExtra("unity"));
         getIntent().putExtra("unity", cmdLine);
-
+        globalVal=(GlobalVal) getApplication();
         mUnityPlayer = new UnityPlayer(this);
         setContentView(mUnityPlayer);
         mUnityPlayer.requestFocus();
     }
-    public void onPress(String msg) throws IOException {
+    void updateMap(float sightingLose, float falseNegative, float falsePositive, String eye) throws IOException {
+        System.out.println("插入数据");
+        if (eye.equals("左眼")) {
+            map.put("sightingLoseRatioL", sightingLose/108);
+            map.put("falseNegativeRatioL", falseNegative/108);
+            map.put("falsePositiveRatioL", falsePositive/108);
+        } else {
+            map.put("sightingLoseRatioR", sightingLose/108);
+            map.put("falseNegativeRatioR", falseNegative/108);
+            map.put("falsePositiveRatioR", falsePositive/108);
+        }
+        globalVal.setMap(map);
+        if(globalVal.getId()!=null){
+            new Thread(new Runnable(){
+                @Override
+                public void run() {
+                    SendData sendData=new SendData();
+                    sendData.insertVal(globalVal.getId(),String.valueOf(sightingLose/108),String.valueOf(falseNegative/108),String.valueOf(falsePositive/108),eye);
+                }
+            }).start();
 
-        mergeBitmap();
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        Intent shareInt = new Intent(Intent.ACTION_SEND);
-
-        shareInt.setType("image/*");
-
-        shareInt.putExtra(Intent.EXTRA_SUBJECT, "选择分享方式");
-        // shareInt.putExtra(Intent.EXTRA_TEXT, msg); // 要分享的内容
-
-        File shareFile = new File(getCacheDir(),"shareImage.png");
-        Uri uri= FileProvider.getUriForFile(
-                this,UnityPlayerActivity.this.getPackageName()+ ".fileprovider",shareFile
-        );
-        shareInt.putExtra(Intent.EXTRA_STREAM,uri);
-
-        shareInt.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-
-
-        startActivity(Intent.createChooser(shareInt, getTitle()));
-
-    }
-    private void insertText(float sightingLoseNumber,float falseNegativeNumber,float falsePositiveNumber,String eye) throws IOException {
-        if (eye.equals("左眼")){
-            this.sightingLoseNumberL=sightingLoseNumber;
-            this.falseNegativeNumberL=falseNegativeNumber;
-            this.falsePositiveNumberL=falsePositiveNumber;
-            this.eye=eye;
-        }else {
-            this.sightingLoseNumberR=sightingLoseNumber;
-            this.falseNegativeNumberR=falseNegativeNumber;
-            this.falsePositiveNumberR=falsePositiveNumber;
-            this.eye=eye;
         }
 
     }
-    private void mergeBitmap() throws IOException {
-
-        String resourcePath="/data/data/com.DefaultCompany.glaucoma_perimetry_system/files";
-        Bitmap firstBitmap = BitmapFactory.decodeFile(resourcePath+"/左眼GrayScale.png");
-        System.out.println(firstBitmap);
-        Bitmap secondBitmap = BitmapFactory.decodeFile(resourcePath+"/右眼GrayScale.png");
-        System.out.println(secondBitmap);
-        Bitmap bitmap;
-        if(firstBitmap!=null&&secondBitmap!=null){
-            int w1 = firstBitmap.getWidth();
-            int h1 = firstBitmap.getHeight();
-            int w2 = secondBitmap.getWidth();
-            int h2 = secondBitmap.getHeight();
-            bitmap= Bitmap.createBitmap(w1+w2, h1 , firstBitmap.getConfig());
-            Paint paint=new Paint();
-            paint.setStyle(Paint.Style.FILL);
-            paint.setTextSize(100);
-            Canvas canvas = new Canvas(bitmap);
-            canvas.drawRGB(255, 255, 255);
-            canvas.drawBitmap(firstBitmap, new Matrix(), null);
-            canvas.drawText("左眼",w1/3, h1/6*5, paint);
-            canvas.drawText("固视丢失率 "+sightingLoseNumberL/108,w1/6, h1/10, paint);
-            canvas.drawText("假阴性率"+falseNegativeNumberL/108,w1/6, h1/5, paint);
-            canvas.drawText("假阳性率"+falsePositiveNumberL/108,w1/6, h1/10*3, paint);
-            canvas.drawBitmap(secondBitmap, w1, 0, null);
-            canvas.drawText("右眼",w1+w2/3, h2/6*5, paint);
-            canvas.drawText("固视丢失率 "+sightingLoseNumberR/108,w1+w2/6, h2/10, paint);
-            canvas.drawText("假阴性率"+falseNegativeNumberR/108,w1+w2/6, h2/5, paint);
-            canvas.drawText("假阳性率"+falsePositiveNumberR/108,w1+w2/6, h2/10*3, paint);
-        }
-        else {
-            bitmap=(firstBitmap!=null)?firstBitmap:secondBitmap;
-            int w = bitmap.getWidth();
-            int h = bitmap.getHeight();
-            bitmap= Bitmap.createBitmap(w,h , bitmap.getConfig());
-            Paint paint=new Paint();
-            paint.setStyle(Paint.Style.FILL);
-            paint.setTextSize(100);
-            Canvas canvas = new Canvas(bitmap);
-            canvas.drawRGB(255, 255, 255);
-            canvas.drawBitmap(firstBitmap, new Matrix(), null);
-            canvas.drawText(eye,w/3, h/6*5, paint);
-            if(eye.equals("左眼")){
-                canvas.drawText("固视丢失率 "+sightingLoseNumberL/108,w/6, h/10, paint);
-                canvas.drawText("假阴性率"+falseNegativeNumberL/108,w/6, h/5, paint);
-                canvas.drawText("假阳性率"+falsePositiveNumberL/108,w/6, h/10*3, paint);
-            }else {
-                canvas.drawText("固视丢失率 "+sightingLoseNumberR/108,w/6, h/10, paint);
-                canvas.drawText("假阴性率"+falseNegativeNumberR/108,w/6, h/5, paint);
-                canvas.drawText("假阳性率"+falsePositiveNumberR/108,w/6, h/10*3, paint);
-
-            }
-
-        }
-        File path = new File(getCacheDir(),"shareImage.png");
-        OutputStream os = new FileOutputStream(path);
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 50, os);
-        os.close();
+    void jumpToMain(){
+        Intent i = new Intent(UnityPlayerActivity.this,MainActivity.class); //切换窗口
+        startActivity(i);
     }
     @Override protected void onNewIntent(Intent intent)
     {
@@ -242,14 +158,16 @@ public class UnityPlayerActivity extends Activity
     // Pass any events not handled by (unfocused) views straight to UnityPlayer
     @Override public boolean onKeyUp(int keyCode, KeyEvent event)     { return mUnityPlayer.injectEvent(event); }
     @Override public boolean onKeyDown(int keyCode, KeyEvent event)   {
-        if(KeyEvent.KEYCODE_HEADSETHOOK == keyCode){
-            UnityPlayer.UnitySendMessage("LeftEyeButton", "ifStartCheck","");
+        if(keyCode==KeyEvent.KEYCODE_HEADSETHOOK){
+            Intent intent=getIntent();
+            String eye=intent.getStringExtra("eye");
+                UnityPlayer.UnitySendMessage("MainCamera", "chooseEye", eye);
+                UnityPlayer.UnitySendMessage("MainCamera", "ifStartCheck","");
         }
-        if(KeyEvent.ACTION_UP==keyCode){
-            UnityPlayer.UnitySendMessage("Background", "ActionUp","");
+        if(keyCode==KeyEvent.KEYCODE_VOLUME_UP){
+            UnityPlayer.UnitySendMessage("MainCamera", "quicken","");
         }
-        return mUnityPlayer.injectEvent(event);
-    }
+        return mUnityPlayer.injectEvent(event); }
     @Override public boolean onTouchEvent(MotionEvent event)          { return mUnityPlayer.injectEvent(event); }
     /*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
 }

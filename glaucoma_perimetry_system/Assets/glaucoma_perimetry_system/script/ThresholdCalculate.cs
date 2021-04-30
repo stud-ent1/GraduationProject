@@ -9,22 +9,23 @@ public class ThresholdCalculate : MonoBehaviour
 
     //定义检测进度计数器
     public static int processConut;
-
-    public static float sightingLoseNumber;
-    public static float falseNegativeNumber;
-    public static float falsePositiveNumber;
-    public static float[] sightingPostStatus;
+    //固视丢失次数
+    public static float sightingLoseNumber ;
+    //假阴性次数
+    public static float falseNegativeNumber = 0;
+    //假阳性次数
+    public static float falsePositiveNumber = 0;
+    //定义视标状态
+    public static float[] sightingPostStatus ;
     public static bool ifClick;
     public static bool[] sightingPostDisplayStatus;
     void Start()
     {
         processConut = 0;
-        sightingLoseNumber = Config.sightingLoseNumber;
-        falseNegativeNumber = Config.falseNegativeNumber;
-        falsePositiveNumber = Config.falsePositiveNumber;
-        sightingPostStatus = Config.sightingPostStatus;
-       
-
+        sightingLoseNumber = 0;
+        falseNegativeNumber = 0;
+        falsePositiveNumber = 0;
+        sightingPostStatus = new float[72];
         viewScale = new float[72] {
         3,3,3,3,3,3,3,3,3,
         3,3,3,3,3,3,3,3,3,
