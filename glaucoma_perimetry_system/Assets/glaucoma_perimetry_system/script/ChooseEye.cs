@@ -38,10 +38,8 @@ public class ChooseEye : MonoBehaviour
     //初始化
     void Start()
     {
-        //设置vr模式为false
-        XRSettings.enabled = false;
-        //设置竖屏
-        SwitchTheScreen.switchVertical();
+        //设置vr模式为true
+        XRSettings.enabled = true;
         //设置是否点击按钮为false
         ifClickButton = false;
     }
@@ -52,12 +50,12 @@ public class ChooseEye : MonoBehaviour
         {
             case "左眼":
                 ResultDisplay.sightingPostDisplayStatus = sightingPostDisplayStatusLeft;
-                print("/////////////////////////////////////////");
+                print("////////////////////////////////////////");
                 ChooseEye.eye = eye;
                 break;
             case "右眼":
                 ResultDisplay.sightingPostDisplayStatus = sightingPostDisplayStatusRight;
-                print("/////////////////////////////////////////");
+                print("////////////////////////////////////////");
                 ChooseEye.eye = eye;
                 break;
             default:
@@ -68,10 +66,7 @@ public class ChooseEye : MonoBehaviour
     {
         //已经选择的按钮
         ifClickButton = true;
-        //设置vr模式为true
-        XRSettings.enabled = true;
         //设置横屏
         SwitchTheScreen.switchHorizontal();
-
     }
 }

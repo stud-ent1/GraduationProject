@@ -74,7 +74,8 @@ public class ResultDisplay : MonoBehaviour
 
         AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
-        jo.Call("updateMap", ThresholdCalculate.sightingLoseNumber, ThresholdCalculate.falseNegativeNumber, ThresholdCalculate.falsePositiveNumber, ChooseEye.eye);
+        string str = ChooseEye.eye + "," + (ThresholdCalculate.sightingLoseNumber/108)+"," +(ThresholdCalculate.falseNegativeNumber/108)+","+ (ThresholdCalculate.falsePositiveNumber/108)+","+string.Join(",", ThresholdCalculate.viewScale);
+        jo.Call("updateMap", str);
     }
     public void jumpToMain()
     {

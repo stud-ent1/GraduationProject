@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/lichengyu/Desktop/GraduationProject/test
+/Users/lichengyu/Desktop/GraduationProject/app
 SceneListBegin?
 Assets/glaucoma_perimetry_system/scenes/VisualFieldInspection.unity
 SceneListEnd?

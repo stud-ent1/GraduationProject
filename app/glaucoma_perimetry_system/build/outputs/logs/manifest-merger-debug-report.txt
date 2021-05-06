@@ -74,11 +74,11 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.g
 	android:isGame
 		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:81-102
 	android:name
-		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:241-266
-activity#com.DefaultCompany.glaucoma_perimetry_system.LoginActivity
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:241-274
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.LoginActivity
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:5:5-10:16
 	android:name
-		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:5:15-44
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:5:15-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:6:7-9:23
 action#android.intent.action.MAIN
@@ -89,13 +89,13 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:8:9-69
 	android:name
 		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:8:19-66
-activity#com.DefaultCompany.glaucoma_perimetry_system.MainActivity
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.MainActivity
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:11:5-15:16
 	android:name
-		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:11:15-43
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:11:15-49
 intent-filter#category:name:android.intent.category.LAUNCHER
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:12:7-14:23
-activity#com.DefaultCompany.glaucoma_perimetry_system.UnityPlayerActivity
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.UnityPlayerActivity
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:5-23:16
 	android:screenOrientation
 		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:48-86
@@ -108,7 +108,7 @@ ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_sys
 	android:configChanges
 		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:119-300
 	android:name
-		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:337-416
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:337-422
 intent-filter#category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER+category:name:com.google.intent.category.CARDBOARD
 ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:17:7-21:23
 category#android.intent.category.LEANBACK_LAUNCHER

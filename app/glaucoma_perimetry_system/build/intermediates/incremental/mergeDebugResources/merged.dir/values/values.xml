@@ -47,6 +47,11 @@
     <string description=" Accessibility description for the back button displayed in the top corner of the VR application to go back to the previous screen. [CHAR LIMIT=50]" name="back_button_content_description">
     back
   </string>
+    <string name="button_text_leftEye">左眼</string>
+    <string name="button_text_no_send">不填写</string>
+    <string name="button_text_rightEye">右眼</string>
+    <string name="button_text_send">发送</string>
+    <string name="button_text_share">分享</string>
     <string description=" Short text shown in a button in the dialog box that shows up to help users configure their Cardboard experience. By clicking on this button, the user will cancel the setup flow and return to their previous activity. [CHAR LIMIT=20]" name="cancel_button">
       Cancel
     </string>
@@ -93,6 +98,7 @@
     Go to Settings
   </string>
     <string description="Google VR component name used for enabling VR mode" name="gvr_vr_mode_component" translatable="false">com.google.vr.vrcore/com.google.vr.vrcore.common.VrCoreListenerService</string>
+    <string name="introduce">感谢使用本测试系统，可在下方输入身份证，电话号码，邮箱作为唯一标识，这将为您和他人提供更好的帮助</string>
     <string description=" Error message displayed as a Toast when Android could not find a browser to open a website. [CHAR LIMIT=50]" name="no_browser_text">
       No browser to open website
     </string>
@@ -115,6 +121,18 @@
     <string description=" Prompt asking if the user wants to switch their Cardboard compatible viewer. [CHAR LIMIT=45]" name="switch_viewer_prompt">
       Using a different viewer?
     </string>
+    <string name="textView_text_choice">主页</string>
+    <string name="textView_text_falseNegative">假阴性率</string>
+    <string name="textView_text_falsePositive">假阳性率</string>
+    <string name="textView_text_grayImg">灰度图:</string>
+    <string name="textView_text_leftEye">左眼</string>
+    <string name="textView_text_notConnect">无连接到服务器</string>
+    <string name="textView_text_notFind">暂无数据</string>
+    <string name="textView_text_ratioImg">概率图:</string>
+    <string name="textView_text_result">结果</string>
+    <string name="textView_text_rightEye">右眼</string>
+    <string name="textView_text_sightingLose">固视丢失率</string>
+    <string name="textView_text_textHelp">请选择需要进行测试的眼睛</string>
     <style name="BaseUnityTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
 </style>
     <style name="GvrDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
