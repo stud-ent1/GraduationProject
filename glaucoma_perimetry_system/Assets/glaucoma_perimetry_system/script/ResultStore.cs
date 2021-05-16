@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ResultStore : MonoBehaviour
 {
@@ -26,8 +27,32 @@ public class ResultStore : MonoBehaviour
 		tex.Apply();
 		byte[] bytes = tex.EncodeToPNG();
 		File.WriteAllBytes(resultPath +"/"+ChooseEye.eye+"GrayScale.png", bytes);
-        #if UNITY_EDITOR
-		UnityEditor.AssetDatabase.Refresh();
-        #endif
+		ChooseEye.ifCheckDone = true;
+		updateMap();
+		//重新加载场景
+		restart();
+		jumpToMain();
+	}
+	//调用android mergeBitmap()合并结果，并传递固视丢失次数，假阴性次数，假阳性次数，以及测试眼睛
+	public void updateMap()
+	{
+
+		AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+		string str = ChooseEye.eye + "," + (ThresholdCalculate.sightingLoseNumber / ChooseEye.maxCheck) + "," + (ThresholdCalculate.falseNegativeNumber / ChooseEye.maxCheck) + "," + (ThresholdCalculate.falsePositiveNumber / ChooseEye.maxCheck) + "," + string.Join(",", ThresholdCalculate.viewScale);
+		jo.Call("updateMap", str);
+	}
+	public void jumpToMain()
+	{
+		AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+		jo.Call("jumpToMain");
+
+	}
+	private void restart()
+	{
+		SceneManager.LoadScene(0);
 	}
 }
+
+

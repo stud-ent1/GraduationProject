@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">glaucoma_perimetry_system</string>
+  <string name="game_view_content_description">Game view</string>
+  <string name="introduce">感谢使用本测试系统，可在下方输入身份证，电话号码，邮箱作为唯一标识，这将为您和他人提供更好的帮助</string>
+  <string name="button_text_send">发送</string>
+  <string name="button_text_no_send">不填写</string>
+  <string name="textView_text_choice">主页</string>
+  <string name="textView_text_result">结果</string>
+  <string name="textView_text_textHelp">请选择需要进行测试的眼睛</string>
+  <string name="button_text_leftEye">左眼</string>
+  <string name="button_text_rightEye">右眼</string>
+  <string name="textView_text_leftEye">左眼</string>
+  <string name="textView_text_rightEye">右眼</string>
+  <string name="textView_text_sightingLose">固视丢失率</string>
+  <string name="textView_text_falsePositive">假阳性率</string>
+  <string name="textView_text_falseNegative">假阴性率</string>
+  <string name="textView_text_grayImg">灰度图:</string>
+  <string name="textView_text_notFind">暂无数据</string>
+  <string name="button_text_share">分享</string>
+  <string name="textView_text_notConnect">无连接到服务器</string>
+  <string name="textView_text_ratioImg">概率图:</string>
+</resources>

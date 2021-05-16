@@ -1,24 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SightingPostLocationDeal : MonoBehaviour
 {
     //定义视标位置数组
-    public static float[,] sightingPostLocation =new float[72,2]{
-        { -4,3.5f},{ -3,3.5f},{-2,3.5f},{-1,3.5f },{0,3.5f },{1,3.5f },{2,3.5f },{3,3.5f },{4,3.5f },
-        { -4,2.5f},{ -3,2.5f},{-2,2.5f },{-1,2.5f },{0,2.5f },{1,2.5f },{2,2.5f },{3,2.5f },{4,2.5f },
-        { -4,1.5f},{ -3,1.5f},{-2,1.5f },{-1,1.5f },{0,1.5f },{1,1.5f },{2,1.5f },{3,1.5f },{4,1.5f },
-        { -4,0.5f},{ -3,0.5f},{-2,0.5f },{-1,0.5f },{0,0.5f },{1,0.5f },{2,0.5f },{3,0.5f },{4,0.5f },
-        { -4,-0.5f},{ -3,-0.5f},{-2,-0.5f },{-1,-0.5f },{0,-0.5f },{1,-0.5f },{2,-0.5f },{3,-0.5f },{4,-0.5f },
-        { -4,-1.5f},{ -3,-1.5f},{-2,-1.5f },{-1,-1.5f },{0,-1.5f },{1,-1.5f },{2,-1.5f },{3,-1.5f },{4,-1.5f },
-        { -4,-2.5f},{ -3,-2.5f},{-2,-2.5f },{-1,-2.5f },{0,-2.5f },{1,-2.5f },{2,-2.5f },{3,-2.5f },{4,-2.5f },
-        { -4,-3.5f},{ -3,-3.5f},{-2,-3.5f },{-1,-3.5f },{0,-3.5f },{1,-3.5f },{2,-3.5f },{3,-3.5f },{4,-3.5f }
-    };
+    public static float[,] sightingPostLocation;
     //定义背景板的位置
     float backgroundX, backgroundY, backgroundZ;
     //定义视标对象
-    GameObject sightingPost;
+    public static GameObject sightingPost;
     //定义背景对象
     GameObject background;
     //定义文本对象
@@ -28,7 +21,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //定义视标的显示时间
     float sightingPostDisplayTime = 0.2f;
     //定义随机数
-    public static int random;
+    public static int randomX,randomY;
     //视标是否显示
     public static bool ifSightingDisplay;
     // Start is called before the first frame update
@@ -78,19 +71,21 @@ public class SightingPostLocationDeal : MonoBehaviour
     }
     void sightingPostMove()
     {
-        if (ThresholdCalculate.processConut <= 108)
+        if (ThresholdCalculate.processConut <= ChooseEye.maxCheck)
         {
 
-            random = Random.Range(0, 71);
+            randomX = Random.Range(0, ChooseEye.maxRandomX);
+            randomY = Random.Range(0,ChooseEye.maxRandomY);
             while (true)
             {
-                if (ThresholdCalculate.sightingPostStatus[random] < 2)
+                if (ThresholdCalculate.sightingPostStatus[randomX*randomY] < 2)
                 {
                     break;
                 }
                 else
                 {
-                    random = Random.Range(0, 71);
+                    randomX = Random.Range(0, ChooseEye.maxRandomX);
+                    randomY = Random.Range(0, ChooseEye.maxRandomY);
                 }
             }
             backgroundX = GameObject.Find("Background").GetComponent<Transform>().localPosition.x;
@@ -98,13 +93,56 @@ public class SightingPostLocationDeal : MonoBehaviour
             backgroundZ = GameObject.Find("Background").GetComponent<Transform>().localPosition.z;
             sightingPost.SetActive(true);
             //设置光点的变化
-            float colorFactor=ThresholdCalculate.viewScale[random];
+            float colorFactor=ThresholdCalculate.viewScale[randomX,randomY];
+            print("视标亮度："+colorFactor);
             sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
-            sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[random, 0], backgroundY + sightingPostLocation[random, 1], backgroundZ - 0.1f);
+            sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[randomX * randomY, 0]/ChooseEye.CV, backgroundY + sightingPostLocation[randomX * randomY, 1]/ ChooseEye.CV, backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
-            ThresholdCalculate.checkFalseNegative();
-            ThresholdCalculate.thresholdCalculate(random);
+            Invoke("wait", 1f);
         }
+        else
+        {
+            ChooseEye.ifCheckDone = true;
+            updateMap();
+            //重新加载场景
+            restart();
+            jumpToMain();
+        }
+    }
+    //调用android mergeBitmap()合并结果，并传递固视丢失次数，假阴性次数，假阳性次数，以及测试眼睛
+    public void updateMap()
+    {
+
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < ChooseEye.maxRandomX; i++)
+        {
+            for (int j=0;j< ChooseEye.maxRandomY;j++)
+            {
+                sb.Append(ThresholdCalculate.viewScale[i, j]+","  );
+            }
+        }
+        sb.Remove(sb.Length-1,1);
+        print(sb.ToString());
+        string str = ChooseEye.eye + "," + (ThresholdCalculate.sightingLoseNumber / ChooseEye.maxCheck) + "," + (ThresholdCalculate.falseNegativeNumber / ChooseEye.maxCheck) + "," + (ThresholdCalculate.falsePositiveNumber / ChooseEye.maxCheck) + "," + sb.ToString();
+        jo.Call("updateMap", str);
+    }
+    public void jumpToMain()
+    {
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        jo.Call("jumpToMain");
+
+    }
+    private void restart()
+    {
+        SceneManager.LoadScene(0);
+    }
+    void wait()
+    {
+        ThresholdCalculate.checkFalseNegative();
+        ThresholdCalculate.thresholdCalculate(randomX,randomY);
     }
     //设置视标不可见
     void CloseShow()

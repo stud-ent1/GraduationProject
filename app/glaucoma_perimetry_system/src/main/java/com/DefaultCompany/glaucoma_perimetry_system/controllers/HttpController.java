@@ -2,6 +2,8 @@ package com.DefaultCompany.glaucoma_perimetry_system.controllers;
 
 import android.util.Log;
 
+import com.DefaultCompany.glaucoma_perimetry_system.enums.RequestType;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -13,74 +15,117 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 public class HttpController {
 
     private int TIME_OUT = 10000; // 超时时间.
     // 连接服务器的url.
-    private String url = "http://172.20.2.28:8000/";
-    private InputStream is;
-    private JSONObject jo;
+    private String url = "http://42.193.97.77:8000/";
 
-    public JSONObject selectVal(String id, String eye) throws ExecutionException, InterruptedException {
+    synchronized JSONObject selectVal(JSONObject jsonObject) throws IOException, JSONException {
+        HttpURLConnection conn = (HttpURLConnection) new URL(url + "select?val=" + jsonObject)
+                .openConnection();
+        conn.setConnectTimeout(TIME_OUT);
+        conn.setRequestMethod("GET"); // GET是大小写敏感的.
+        Log.i("查询请求", url + "select?val=" + jsonObject);
+        //得到输入流
+        InputStream inputStream = conn.getInputStream();
+        //创建包装流
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+        //定义String类型用于储存单行数据
+        String line = br.readLine();
 
-        //创建StringBuffer对象用于存储所有数据
-        StringBuffer sb = new StringBuffer();
+        Log.i("数据", line);
+
+        JSONObject rJsonObject = new JSONObject(line);
+        Log.i("转json", rJsonObject.toString());
+
+        return rJsonObject;
+    }
+
+
+    public JSONObject checkVal(JSONObject jsonObject) throws IOException, JSONException {
+
+
+        HttpURLConnection conn = (HttpURLConnection) new URL(url + "check?val=" + jsonObject)
+                .openConnection();
+        conn.setConnectTimeout(TIME_OUT);
+        conn.setRequestMethod("GET"); // GET是大小写敏感的.
+        Log.i("校验请求", url + "check?val=" + jsonObject);
+        //得到输入流
+        InputStream inputStream = conn.getInputStream();
+        //创建包装流
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+        //定义String类型用于储存单行数据
+        String line = br.readLine();
+
+        Log.i("数据", line);
+        JSONObject rJsonObject = new JSONObject(line);
+        Log.i("转json", rJsonObject.toString());
+        return rJsonObject;
+
+    }
+
+    synchronized JSONObject registerVal(JSONObject jsonObject) throws IOException, JSONException {
+        HttpURLConnection conn = (HttpURLConnection) new URL(url + "register?val=" + jsonObject)
+                .openConnection();
+        conn.setConnectTimeout(TIME_OUT);
+        Log.i("注册请求", url + "register?val=" + jsonObject);
+        conn.setRequestMethod("GET"); // GET是大小写敏感的.
+        InputStream inputStream = conn.getInputStream();
+        //创建包装流
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+        //定义String类型用于储存单行数据
+        String line = br.readLine();
+        Log.i("数据", line);
+        JSONObject rJsonObject = new JSONObject(line);
+        Log.i("转json", rJsonObject.toString());
+        return rJsonObject;
+    }
+    public JSONObject insertVal(JSONObject jsonObject) throws IOException, JSONException {
+            HttpURLConnection conn = (HttpURLConnection) new URL(url + "insert?val=" +jsonObject)
+                    .openConnection();
+            conn.setConnectTimeout(TIME_OUT);
+            Log.i("插入请求",url + "insert?val=" +jsonObject);
+            conn.setRequestMethod("GET"); // GET是大小写敏感的.
+            InputStream inputStream = conn.getInputStream();
+            //创建包装流
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+            //定义String类型用于储存单行数据
+            String line = br.readLine();
+            Log.i("数据", line);
+            JSONObject rJsonObject = new JSONObject(line);
+            Log.i("转json", rJsonObject.toString());
+            return rJsonObject;
+
+
+    }
+
+    public JSONObject execRequest(RequestType requestType, JSONObject jsonObject) throws ExecutionException, InterruptedException {
         Callable callable = new Callable() {
             @Override
-            public JSONObject call() throws Exception {
-                try {
-                    HttpURLConnection conn = (HttpURLConnection) new URL(url + "select?Id=" + id + "&eye=" + eye)
-                            .openConnection();
-                    conn.setConnectTimeout(TIME_OUT);
-                    conn.setRequestMethod("GET"); // GET是大小写敏感的.
-                    Log.i("get请求",url + "select?Id=" + id + "&eye=" + eye);
-                    //得到输入流
-                    is = conn.getInputStream();
-                    //创建包装流
-                    BufferedReader br = new BufferedReader(new InputStreamReader(is));
-                    //定义String类型用于储存单行数据
-                    String line = null;
-
-                    while ((line = br.readLine()) != null) {
-                        Log.i("数据",line);
-                        sb.append(line);
-                    }
-                    Log.i("sb",sb.toString());
-                    jo = new JSONObject(sb.toString());
-                    Log.i("转json",jo.toString());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Log.w("", "连接不上服务器");
+            public Object call() throws Exception {
+                switch (requestType) {
+                    case CHECK:
+                        return checkVal(jsonObject);
+                    case INSERT:
+                        return insertVal(jsonObject);
+                    case SELECT:
+                        return selectVal(jsonObject);
+                    case REGISTER:
+                        return registerVal(jsonObject);
+                    default:
+                        break;
                 }
-                return jo;
+                return null;
             }
         };
-       FutureTask<JSONObject> futureTask=new FutureTask<>(callable);
-        Thread thread=new Thread(futureTask);
+        FutureTask<JSONObject> futureTask = new FutureTask<>(callable);
+        Thread thread = new Thread(futureTask);
         thread.start();
-
-        while (!futureTask.isDone()) {
-
-        }
         return futureTask.get();
     }
 
-    public void insertVal(String id, String str) {
-        try {
-            HttpURLConnection conn = (HttpURLConnection) new URL(url + "insert?val=" + id + "," + str)
-                    .openConnection();
-            conn.setConnectTimeout(TIME_OUT);
-            System.out.println(url + "insert?" + id + "," + str);
-            conn.setRequestMethod("GET"); // GET是大小写敏感的.
-            System.out.println(conn.getResponseCode());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-    }
 }

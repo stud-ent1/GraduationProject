@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.DefaultCompany.glaucoma_perimetry_system.R;
+import com.DefaultCompany.glaucoma_perimetry_system.controllers.ResultController;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThresholdCalculate : MonoBehaviour
 {
     //定义视野阈值数组
-    public static float[] viewScale;
+    public static float[,] viewScale;
 
     //定义检测进度计数器
     public static int processConut;
@@ -25,17 +25,6 @@ public class ThresholdCalculate : MonoBehaviour
         sightingLoseNumber = 0;
         falseNegativeNumber = 0;
         falsePositiveNumber = 0;
-        sightingPostStatus = new float[72];
-        viewScale = new float[72] {
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3,
-        3,3,3,3,3,3,3,3,3
-    };
     }
     private void Update()
     {
@@ -51,142 +40,144 @@ public class ThresholdCalculate : MonoBehaviour
     //如果进行响应，那么与其对应的视野阈值则不会降低，如果不响应，不进行响应，那么会先现判视野状态中的值，如果为true，则表示此位置为有效视野点，
     //且视野存在缺陷，此时视野阈值会降低，为了加快检测速度，他周围的八个位点也会降低（如果存在，⬆️⬇️⬅️➡️↖️↗️↙️↘️），但是，如果结果为flase，
     //那么此位置上为无效视野点，但其周围的八个位点可能为有效视野点，那么有效视野点又该不该降低呢？
-   public static void thresholdCalculate( int spld)
+   public static void thresholdCalculate( int x,int y)
     {
-        sightingPostDisplayStatus = ResultDisplay.sightingPostDisplayStatus;
-        if (ifClick == false&&sightingPostDisplayStatus[spld])
+        //sightingPostDisplayStatus = SightingPostLocationDeal.sightingPostDisplayStatus;
+        print("sightingPostDisplayStatus:"+sightingPostDisplayStatus);
+        if (ifClick == false&&sightingPostDisplayStatus[x*y])
         {
-            if (viewScale[spld] >1)
+            if (viewScale[x,y] >1)
             {
-                viewScale[spld] -= 1;
+                viewScale[x,y] -= 1;
             }
             else
             {
-                viewScale[spld] -= 1;
-                sightingPostStatus[spld] +=1;
+                //当viewScale[spld]=1时触发，此时如果在减1，则会导致viewScale[spld]=0
+                //viewScale[spld] -= 1;
+                sightingPostStatus[x*y] +=1;
                 processConut+=1;
             }
 
 
-            if (spld - 10 >= 0)
+            if (x - 1 >= 0&&y-1>=0)
             {
-                if (viewScale[spld - 10]>1)
+                if (viewScale[x - 1,y-1]>1)
                 {
-                    viewScale[spld - 10] -= 1;
+                    viewScale[x - 1,y-1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld-10] -= 1;
-                    sightingPostStatus[spld-10] += 1;
+                    //viewScale[x-10] -= 1;
+                    sightingPostStatus[(x-1)*(y-1)] += 1;
                     processConut += 1;
                 }
                
             }
-            if (spld - 9 >= 0)
+            if (y-1>=0)
             {
-                if(viewScale[spld - 9]>1)
+                if(viewScale[x ,y-1]>1)
                 {
-                    viewScale[spld - 9] -= 1;
+                    viewScale[x ,y-1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld-9] -= 1;
-                    sightingPostStatus[spld-9] += 1;
+                    //viewScale[x-9] -= 1;
+                    sightingPostStatus[x*(y-1)] += 1;
                     processConut += 1;
                 }
                 
             }
-            if (spld - 8 >= 0)
+            if (x +1 <ChooseEye.maxRandomX&&y-1>=0 )
             {
-                if(viewScale[spld - 8] >1)
+                if(viewScale[x +1,y-1] >1)
                 {
-                    viewScale[spld - 8] -= 1;
+                    viewScale[x +1,y-1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld-8] -= 1;
-                    sightingPostStatus[spld-8] += 1;
+                    //viewScale[x-8] -= 1;
+                    sightingPostStatus[(x+1)*(y-1)] += 1;
                     processConut += 1;
                 }
                
             }
-            if (spld - 1 >= 0)
+            if (x - 1 >= 0)
             {
-                if (viewScale[spld - 1] >1)
+                if (viewScale[x - 1,y] >1)
                 {
-                    viewScale[spld - 1] -= 1;
+                    viewScale[x - 1,y] -= 1;
                 }
                 else
                 {
-                    viewScale[spld-1] -= 1;
-                    sightingPostStatus[spld-1] += 1;
+                    //viewScale[x-1] -= 1;
+                    sightingPostStatus[(x-1)*y] += 1;
                     processConut += 1;
                 }  
             }
-            if (spld + 1 < viewScale.Length)
+            if (x + 1 < ChooseEye.maxRandomX)
             {
-                if (viewScale[spld + 1]>1)
+                if (viewScale[x + 1,y]>1)
                 {
-                    viewScale[spld + 1] -= 1;
+                    viewScale[x + 1,y] -= 1;
                 }
                 else
                 {
-                    viewScale[spld+1] -= 1;
-                    sightingPostStatus[spld+1] += 1;
+                    //viewScale[x+1] -= 1;
+                    sightingPostStatus[(x+1)*y] += 1;
                     processConut += 1;
                 }
                
             }
-            if (spld + 8 < viewScale.Length)
+            if (x -1 >=0&&y+1<ChooseEye.maxRandomY)
             {
-                if (viewScale[spld + 8]>1)
+                if (viewScale[x -1,y+1]>1)
                 {
-                    viewScale[spld + 8] -= 1;
+                    viewScale[x -1,y+1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld+8] -= 1;
-                    sightingPostStatus[spld+8] += 1;
+                    //viewScale[x+8] -= 1;
+                    sightingPostStatus[(x-1)*(y+1)] += 1;
                     processConut += 1;
                 }
                
             }
-            if (spld + 9 < viewScale.Length)
+            if (y+1 < ChooseEye.maxRandomY)
             {
-                if (viewScale[spld + 9]>1)
+                if (viewScale[x ,y+1]>1)
                 {
-                    viewScale[spld + 9] -= 1;
+                    viewScale[x ,y+1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld+9] -= 1;
-                    sightingPostStatus[spld+9] += 1;
+                    //viewScale[x+9] -= 1;
+                    sightingPostStatus[x*(y+1)] += 1;
                     processConut += 1;
                 }
                 
             }
-            if (spld + 10 < viewScale.Length)
+            if (x + 1 < ChooseEye.maxRandomX&&y+1<ChooseEye.maxRandomY)
             {
-                if (viewScale[spld + 10]>1)
+                if (viewScale[x + 1,y+1]>1)
                 {
-                    viewScale[spld + 10] -= 1;
+                    viewScale[x + 1,y+1] -= 1;
                 }
                 else
                 {
-                    viewScale[spld+10] -= 1;
-                    sightingPostStatus[spld+10] += 1;
+                    //viewScale[x+10] -= 1;
+                    sightingPostStatus[(x+1)*(y+1)] += 1;
                     processConut += 1;
                 }
                 
             }
-        }else if (ifClick && sightingPostDisplayStatus[spld] == true)
+        }else if (ifClick && sightingPostDisplayStatus[x] == true)
         {
             processConut += 1;
-            sightingPostStatus[spld] += 1;
+            sightingPostStatus[x*y] += 1;
         }
-        else if (ifClick == false && sightingPostDisplayStatus[spld] == false)
+        else if (ifClick == false && sightingPostDisplayStatus[x] == false)
         {
-            sightingPostStatus[spld] += 1;
+            sightingPostStatus[x*y] += 1;
         }
         ifClick = false;
     }
@@ -194,7 +185,7 @@ public class ThresholdCalculate : MonoBehaviour
     //对应的逻辑就是，当视标状态为true时，若响应状态为true，但是sightingPostDisplayStatus状态为false，则固视丢失次数+1
     void checkSightingLose()
     {
-        if (SightingPostLocationDeal.ifSightingDisplay&& ifClick&&sightingPostDisplayStatus[SightingPostLocationDeal.random] ==false) {
+        if (SightingPostLocationDeal.ifSightingDisplay&& ifClick&&sightingPostDisplayStatus[SightingPostLocationDeal.randomX*SightingPostLocationDeal.randomY] ==false) {
             sightingLoseNumber += 1;
         }
     }
@@ -202,7 +193,7 @@ public class ThresholdCalculate : MonoBehaviour
     //对应的逻辑就是，当一个点响应次数(sightingPostStatus[random])>0,且响应状态为false
     public static void checkFalseNegative()
     {
-        if (ifClick==false&&sightingPostStatus[SightingPostLocationDeal.random]>0) {
+        if (ifClick==false&&sightingPostStatus[SightingPostLocationDeal.randomX * SightingPostLocationDeal.randomY] >0) {
             falseNegativeNumber += 1;
         }
     }

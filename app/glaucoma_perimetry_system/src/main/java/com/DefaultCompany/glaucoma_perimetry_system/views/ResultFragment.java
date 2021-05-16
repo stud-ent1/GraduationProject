@@ -52,12 +52,12 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
         share.setOnClickListener(this);
         globalVal = (GlobalVal) getActivity().getApplication();
         resultController = new ResultController(getActivity());
-
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        resultController.delFile(getActivity().getFilesDir());
         globalVal = resultController.updateVal(globalVal);
         Map<String, Object> map = globalVal.getMap();
         sightingLoseL.setText(map.get("sightingLoseRatioL").toString());
@@ -66,8 +66,8 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
         sightingLoseR.setText(map.get("sightingLoseRatioR").toString());
         falsePositiveR.setText(map.get("falsePositiveRatioR").toString());
         falseNegativeR.setText(map.get("falseNegativeRatioR").toString());
-        setImageView(resultController.getImg("左眼GrayScale.png"), imageViewL, notFindL);
-        setImageView(resultController.getImg("右眼GrayScale.png"), imageViewR, notFindR);
+        setImageView(resultController.getImg("左眼GrayImage.png"), imageViewL, notFindL);
+        setImageView(resultController.getImg("右眼GrayImage.png"), imageViewR, notFindR);
         setImageView(resultController.getImg("左眼RatioImage.png"), ratioImgL, notFindL1);
         setImageView(resultController.getImg("右眼RatioImage.png"), ratioImgR, notFindR1);
 
