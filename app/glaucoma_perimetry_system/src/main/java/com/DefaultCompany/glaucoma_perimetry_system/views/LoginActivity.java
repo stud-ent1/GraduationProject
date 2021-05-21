@@ -15,19 +15,18 @@ import android.widget.TextView;
 
 import com.DefaultCompany.glaucoma_perimetry_system.R;
 import com.DefaultCompany.glaucoma_perimetry_system.controllers.HttpController;
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.LoginController;
+import com.DefaultCompany.glaucoma_perimetry_system.controllers.LoginDeal;
 import com.DefaultCompany.glaucoma_perimetry_system.entitys.GlobalVal;
 import com.DefaultCompany.glaucoma_perimetry_system.enums.RequestType;
 import com.DefaultCompany.glaucoma_perimetry_system.listeners.OnSwipeTouchListener;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import static java.nio.file.Paths.get;
 
 public class LoginActivity extends Activity implements View.OnClickListener {
     private GlobalVal globalVal;
-    private LoginController loginController = new LoginController();
+    private LoginDeal loginController = new LoginDeal();
     private HttpController httpController = new HttpController();
     private EditText Pid, passWord;
     private TextView alterText;

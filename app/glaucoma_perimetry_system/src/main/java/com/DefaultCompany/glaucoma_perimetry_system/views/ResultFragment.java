@@ -12,17 +12,17 @@ import android.widget.TextView;
 
 
 import com.DefaultCompany.glaucoma_perimetry_system.R;
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.ResultController;
+import com.DefaultCompany.glaucoma_perimetry_system.controllers.ResultDeal;
 import com.DefaultCompany.glaucoma_perimetry_system.entitys.GlobalVal;
 
 import java.util.Map;
 
 public class ResultFragment extends Fragment implements View.OnClickListener {
     private View resultLayout;
-    private ImageView imageViewL, imageViewR, ratioImgL, ratioImgR;
+    private ImageView garyImgL, garyImgR, ratioImgL, ratioImgR;
     private TextView sightingLoseL, falsePositiveL, falseNegativeL, sightingLoseR, falsePositiveR, falseNegativeR, notFindL, notFindR, notFindL1, notFindR1;
     private GlobalVal globalVal;
-    private ResultController resultController;
+    private ResultDeal resultController;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -35,8 +35,8 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         Button share = resultLayout.findViewById(R.id.share);
-        imageViewL = resultLayout.findViewById(R.id.grayImgL);
-        imageViewR = resultLayout.findViewById(R.id.grayImgR);
+        garyImgL = resultLayout.findViewById(R.id.grayImgL);
+        garyImgR = resultLayout.findViewById(R.id.grayImgR);
         ratioImgL = resultLayout.findViewById(R.id.ratioImgL);
         ratioImgR = resultLayout.findViewById(R.id.ratioImgR);
         sightingLoseL = resultLayout.findViewById(R.id.sightingLoseL);
@@ -51,7 +51,7 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
         notFindR1 = resultLayout.findViewById(R.id.notFindR1);
         share.setOnClickListener(this);
         globalVal = (GlobalVal) getActivity().getApplication();
-        resultController = new ResultController(getActivity());
+        resultController = new ResultDeal(getActivity());
     }
 
     @Override
@@ -66,8 +66,8 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
         sightingLoseR.setText(map.get("sightingLoseRatioR").toString());
         falsePositiveR.setText(map.get("falsePositiveRatioR").toString());
         falseNegativeR.setText(map.get("falseNegativeRatioR").toString());
-        setImageView(resultController.getImg("左眼GrayImage.png"), imageViewL, notFindL);
-        setImageView(resultController.getImg("右眼GrayImage.png"), imageViewR, notFindR);
+        setImageView(resultController.getImg("左眼GrayImage.png"), garyImgL, notFindL);
+        setImageView(resultController.getImg("右眼GrayImage.png"), garyImgR, notFindR);
         setImageView(resultController.getImg("左眼RatioImage.png"), ratioImgL, notFindL1);
         setImageView(resultController.getImg("右眼RatioImage.png"), ratioImgR, notFindR1);
 

@@ -72,13 +72,13 @@ public class DrawRatioImage extends View {
                 if (sightingPostDisplayStatus[count]) {
 
 
-                    if (Integer.valueOf(arr[count]) >= 0.6) {
+                    if (Double.parseDouble(arr[count]) >= 0.6) {
 
                         canvas.drawPoints(small(), p);//画多个点
-                    } else if (Integer.valueOf(arr[count]) < 0.6 && Integer.valueOf(arr[count]) >= 0.3) {
+                    } else if (Double.parseDouble(arr[count]) < 0.6 && Double.parseDouble(arr[count]) >= 0.3) {
 
                         canvas.drawPoints(middle(), p);//画多个点
-                    } else if (Integer.valueOf(arr[count]) < 0.3) {
+                    } else if (Double.parseDouble(arr[count]) < 0.3) {
 
                         canvas.drawPoints(big(), p);//画多个点
                     }

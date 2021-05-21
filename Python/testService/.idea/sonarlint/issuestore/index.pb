@@ -8,8 +8,6 @@ C
 C
 Tools/CommonTool.py,a/a/aa469b3c1879b72ccd9a584567579a9f0041dd82
 B
-Tools/TableTool.py,3/3/33752d6470591def40fa20d1f72fac4cc6cb5fc7
-B
 config/config.yaml,5/1/51c347deb3d0a913cd1171b574d79293a866eb3f
-@
-sql/TableTool.py,e/3/e301be5b233b64d5c21f0926df7cf9f894ca69d7
+B
+Tools/TableTool.py,3/3/33752d6470591def40fa20d1f72fac4cc6cb5fc7

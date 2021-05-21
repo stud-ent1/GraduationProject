@@ -12,15 +12,14 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.DefaultCompany.glaucoma_perimetry_system.R;
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.ChoiceController;
+import com.DefaultCompany.glaucoma_perimetry_system.controllers.ChoiceDeal;
 import com.DefaultCompany.glaucoma_perimetry_system.entitys.GlobalVal;
 
 public class ChoiceFragment extends Fragment implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
     private TextView textHelp, textHelp1;
     private View choiceLayout;
     private RadioGroup programsRadioGroup, eyesRadioGroup;
-    private ChoiceController choiceController;
-    private Intent i;
+    private ChoiceDeal choiceController;
     private RadioButton r;
     private GlobalVal globalVal;
 
@@ -43,7 +42,7 @@ public class ChoiceFragment extends Fragment implements View.OnClickListener, Ra
         beginCheck.setOnClickListener(this);
         programsRadioGroup.setOnCheckedChangeListener(this);
         eyesRadioGroup.setOnCheckedChangeListener(this);
-        choiceController = new ChoiceController(getActivity());
+        choiceController = new ChoiceDeal(getActivity());
         globalVal=(GlobalVal) getActivity().getApplication();
     }
 
@@ -51,7 +50,7 @@ public class ChoiceFragment extends Fragment implements View.OnClickListener, Ra
     public void onClick(View v) {
         // 步骤1:通过getArgments()获取从Activity传过来的全部值
 
-        i = new Intent(getActivity(), UnityPlayerActivity.class); //切换窗口
+       Intent i= new Intent(getActivity(), UnityPlayerActivity.class); //切换窗口
         i.putExtra("eye", globalVal.getEye());
         i.putExtra("program", globalVal.getProgram());
 //       if (choiceController.ifExistAir()) {

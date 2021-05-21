@@ -7,7 +7,7 @@ import sqlite3
 from fastapi.responses import JSONResponse
 from fastapi import FastAPI
 
-from sql.TableTool import TableTool
+from Tools.TableTool import TableTool
 
 app = FastAPI()
 
@@ -23,9 +23,13 @@ def insert_val(val):
         table = "late_data"
     try:
         tt.insert(con, table, tmp.get("val"))
+        return JSONResponse(content={"status": "success"})
     except sqlite3.IntegrityError:
         print("执行更新")
-        tt.update(con, table, tmp.get("val"))
+        if tt.update(con, table, tmp.get("val")):
+            return JSONResponse(content={"status": "success"})
+        else:
+            return JSONResponse(content={"status": "fail"})
 
 
 @app.get("/register")

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.DefaultCompany.glaucoma_perimetry_system.R;
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.ResultController;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -72,7 +71,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (index) {
             case 0:
 
-                choiceLayout.setBackgroundColor(0xff0000ff);
+                choiceLayout.setBackgroundColor(0xffECE2EB);
                 if (choiceFragment == null) {
 
                     // 如果MessageFragment为空，则创建一个并添加到界面上
@@ -85,7 +84,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case 1:
                 // 当点击了联系人tab时，改变控件的图片和文字颜色
-                resultLayout.setBackgroundColor(0xff0000ff);
+                resultLayout.setBackgroundColor(0xffECE2EB);
                 if (resultFragment == null) {
 
                     // 如果ContactsFragment为空，则创建一个并添加到界面上

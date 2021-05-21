@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#B5D5D0"
     android:orientation="vertical"
     tools:context=".views.MainActivity">
 
@@ -107,6 +107,12 @@
 
 
         <Button
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#A1608C"
+            android:textSize="32sp"
+            android:textStyle="bold"
             android:id="@+id/beginCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

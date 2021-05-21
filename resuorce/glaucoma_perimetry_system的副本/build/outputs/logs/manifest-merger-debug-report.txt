@@ -1,0 +1,314 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:29:5-37:16
+	android:grantUriPermissions
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:33:9-43
+	android:authorities
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:31:9-60
+	android:exported
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:32:9-33
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:30:9-63
+manifest
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+MERGED from [:gvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/AndroidManifest.xml:2:1-9:12
+MERGED from [:unitygvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/827e57ce2b2a6ad0811175a54623dbbd/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/13dc806d0c3930fb9de6a26e1904ff52/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/8403febb4df7dbbb4ad6e5dd2a06a3e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdcc1389ed3eef328620672968f3d6c0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d480504a8fbde47216df8aa8fcb575fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1972310aa4ea7a0290321eca94f7e1c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/54bb91ec8fc92e428929952aa7a52a5c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/ed0b909f9a493480d3bb7ccb67e0a1d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d7f797befb686e34417db693e8be8cc6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/3564882df863f12355661de45212bdce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a0e8ec1d19bb77e40fafd09298c413f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdff7fe49bc13577a6a0f6cfe740f1c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1aef59f611ec9c1caf66e7f6ea20360f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c949ad84d5735ab7be523e7ec76e47dc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/0180abd3db28dfc448061a569e0d6c52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1786721240568aa2acdc0a5a473a776c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b1d9cb0cd41ac89a84c40060ee07d51/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/62d1406e8662ec37eb4ff17d44f9fdd2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c1839fa0860c2e5b05254d020fd1e148/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/f160501eb292fefbc667fcc048066eaf/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/430f4d31af0a55cf639c56965a61d9c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/835803a5a5c9fa96abc3f643394a3491/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/b81fe5bf51765e62dcbcc31e8199e2c9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/90365981be79650258eed815c3413469/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/2550075a04abf5dcaa228d876542f091/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fb524717b7efb38a4947125e1f4486f9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/01c12a9c2cdb0a2482333a9bd64c708c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/9ba7e95f94a9e616884f1924a8587dbf/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a5483b30a74c000857424e9171f1e4c3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/28183ce5e81062678da0704f87b19911/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+	package
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:70-124
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:125-171
+	android:versionCode
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:1-49:12
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:2:172-212
+supports-screens
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:3:135-160
+application
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:3-38:17
+MERGED from [com.android.support:design:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/13dc806d0c3930fb9de6a26e1904ff52/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/13dc806d0c3930fb9de6a26e1904ff52/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/f160501eb292fefbc667fcc048066eaf/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/f160501eb292fefbc667fcc048066eaf/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:48-80
+	android:icon
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:16-47
+	android:banner
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:103-140
+	android:theme
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:141-179
+	android:networkSecurityConfig
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:180-240
+	android:isGame
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:81-102
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:4:241-274
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.LoginActivity
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:5:5-10:16
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:5:15-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:6:7-9:23
+action#android.intent.action.MAIN
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:7:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:8:9-69
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:8:19-66
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.MainActivity
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:11:5-15:16
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:11:15-49
+intent-filter#category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:12:7-14:23
+activity#com.DefaultCompany.glaucoma_perimetry_system.views.UnityPlayerActivity
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:5-23:16
+	android:screenOrientation
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:48-86
+	android:label
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:15-47
+	android:launchMode
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:87-118
+	android:hardwareAccelerated
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:301-336
+	android:configChanges
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:119-300
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:16:337-422
+intent-filter#category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER+category:name:com.google.intent.category.CARDBOARD
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:17:7-21:23
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:19:9-78
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:19:19-75
+category#com.google.intent.category.CARDBOARD
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:20:9-73
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:20:19-70
+meta-data#unityplayer.UnityActivity
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:22:7-82
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:22:59-79
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:22:18-58
+meta-data#unityplayer.SkipPermissionsDialog
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:24:5-88
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:24:65-85
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:24:16-64
+meta-data#unity.build-id
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:25:5-101
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:25:46-98
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:25:16-45
+meta-data#unity.splash-mode
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:26:5-69
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:26:49-66
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:26:16-48
+meta-data#unity.splash-enable
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:27:5-75
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:27:51-72
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:27:16-50
+meta-data#unity.builder
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:28:5-79
+	android:value
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:28:45-76
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:28:16-44
+uses-feature#0x00020000
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:39:3-52
+	android:glEsVersion
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:39:17-49
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:40:3-78
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:40:20-75
+uses-permission#android.permission.INTERNET
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:41:3-65
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:41:20-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:42:3-106
+	android:maxSdkVersion
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:42:77-103
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:42:20-76
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:43:3-88
+	android:required
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:43:61-85
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:43:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:44:3-99
+	android:required
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:44:72-96
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:44:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:45:3-108
+	android:required
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:45:81-105
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:45:17-80
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:46:3-77
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:46:20-74
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:48:3-78
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:48:20-75
+uses-sdk
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+MERGED from [:gvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/AndroidManifest.xml:5:5-7:41
+MERGED from [:gvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/dccf1aae5ea93edf0f1ce3303426bf35/AndroidManifest.xml:5:5-7:41
+MERGED from [:unitygvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/827e57ce2b2a6ad0811175a54623dbbd/AndroidManifest.xml:7:5-9:41
+MERGED from [:unitygvr:] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/827e57ce2b2a6ad0811175a54623dbbd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/13dc806d0c3930fb9de6a26e1904ff52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/13dc806d0c3930fb9de6a26e1904ff52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/8403febb4df7dbbb4ad6e5dd2a06a3e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/8403febb4df7dbbb4ad6e5dd2a06a3e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdcc1389ed3eef328620672968f3d6c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdcc1389ed3eef328620672968f3d6c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d480504a8fbde47216df8aa8fcb575fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d480504a8fbde47216df8aa8fcb575fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1972310aa4ea7a0290321eca94f7e1c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1972310aa4ea7a0290321eca94f7e1c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/54bb91ec8fc92e428929952aa7a52a5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/54bb91ec8fc92e428929952aa7a52a5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/ed0b909f9a493480d3bb7ccb67e0a1d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/ed0b909f9a493480d3bb7ccb67e0a1d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d7f797befb686e34417db693e8be8cc6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/d7f797befb686e34417db693e8be8cc6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/3564882df863f12355661de45212bdce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/3564882df863f12355661de45212bdce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a0e8ec1d19bb77e40fafd09298c413f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a0e8ec1d19bb77e40fafd09298c413f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdff7fe49bc13577a6a0f6cfe740f1c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fdff7fe49bc13577a6a0f6cfe740f1c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1aef59f611ec9c1caf66e7f6ea20360f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1aef59f611ec9c1caf66e7f6ea20360f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c949ad84d5735ab7be523e7ec76e47dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c949ad84d5735ab7be523e7ec76e47dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/0180abd3db28dfc448061a569e0d6c52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/0180abd3db28dfc448061a569e0d6c52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1786721240568aa2acdc0a5a473a776c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/1786721240568aa2acdc0a5a473a776c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b1d9cb0cd41ac89a84c40060ee07d51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b1d9cb0cd41ac89a84c40060ee07d51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/62d1406e8662ec37eb4ff17d44f9fdd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/62d1406e8662ec37eb4ff17d44f9fdd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/4b05099486f67bcff11f37056edcf0cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c1839fa0860c2e5b05254d020fd1e148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/c1839fa0860c2e5b05254d020fd1e148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/f160501eb292fefbc667fcc048066eaf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/f160501eb292fefbc667fcc048066eaf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/430f4d31af0a55cf639c56965a61d9c8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/430f4d31af0a55cf639c56965a61d9c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/835803a5a5c9fa96abc3f643394a3491/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/835803a5a5c9fa96abc3f643394a3491/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/b81fe5bf51765e62dcbcc31e8199e2c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/b81fe5bf51765e62dcbcc31e8199e2c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/90365981be79650258eed815c3413469/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/90365981be79650258eed815c3413469/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/2550075a04abf5dcaa228d876542f091/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/2550075a04abf5dcaa228d876542f091/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fb524717b7efb38a4947125e1f4486f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/fb524717b7efb38a4947125e1f4486f9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/01c12a9c2cdb0a2482333a9bd64c708c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/01c12a9c2cdb0a2482333a9bd64c708c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/9ba7e95f94a9e616884f1924a8587dbf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/9ba7e95f94a9e616884f1924a8587dbf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a5483b30a74c000857424e9171f1e4c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/a5483b30a74c000857424e9171f1e4c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/28183ce5e81062678da0704f87b19911/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lichengyu/.gradle/caches/transforms-2/files-2.1/28183ce5e81062678da0704f87b19911/AndroidManifest.xml:20:5-44
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+		INJECTED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:34:7-36:52
+	android:resource
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:36:11-49
+	android:name
+		ADDED from /Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/AndroidManifest.xml:35:11-61

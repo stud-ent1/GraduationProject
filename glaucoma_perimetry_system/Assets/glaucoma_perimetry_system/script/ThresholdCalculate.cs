@@ -43,8 +43,9 @@ public class ThresholdCalculate : MonoBehaviour
    public static void thresholdCalculate( int x,int y)
     {
         //sightingPostDisplayStatus = SightingPostLocationDeal.sightingPostDisplayStatus;
-        print("sightingPostDisplayStatus:"+sightingPostDisplayStatus);
-        if (ifClick == false&&sightingPostDisplayStatus[x*y])
+        //print("sightingPostDisplayStatus:"+sightingPostDisplayStatus);
+        int a = ChooseEye.maxRandomY;
+        if (ifClick == false&&sightingPostDisplayStatus[a*x+y])
         {
             if (viewScale[x,y] >1)
             {
@@ -54,132 +55,185 @@ public class ThresholdCalculate : MonoBehaviour
             {
                 //当viewScale[spld]=1时触发，此时如果在减1，则会导致viewScale[spld]=0
                 //viewScale[spld] -= 1;
-                sightingPostStatus[x*y] +=1;
-                processConut+=1;
-            }
-
-
-            if (x - 1 >= 0&&y-1>=0)
-            {
-                if (viewScale[x - 1,y-1]>1)
+                if (sightingPostStatus[a * x + y]<2)
                 {
-                    viewScale[x - 1,y-1] -= 1;
+                    processConut += 1;
+                }
+                sightingPostStatus[a * x + y] += 1;
+            }
+            try
+            {
+                if (viewScale[x - 1, y - 1] > 1)
+                {
+                    viewScale[x - 1, y - 1] -= 1;
                 }
                 else
                 {
                     //viewScale[x-10] -= 1;
-                    sightingPostStatus[(x-1)*(y-1)] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * (x - 1) + (y - 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x - 1) + (y - 1)] += 1;
                 }
-               
             }
-            if (y-1>=0)
+            catch
             {
-                if(viewScale[x ,y-1]>1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x - 1, y] > 1)
                 {
-                    viewScale[x ,y-1] -= 1;
+                    viewScale[x - 1, y] -= 1;
                 }
                 else
                 {
                     //viewScale[x-9] -= 1;
-                    sightingPostStatus[x*(y-1)] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * (x - 1) + y]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x - 1) + y] += 1;
                 }
-                
+            } catch {
+                print("越界");
             }
-            if (x +1 <ChooseEye.maxRandomX&&y-1>=0 )
+            try
             {
-                if(viewScale[x +1,y-1] >1)
-                {
-                    viewScale[x +1,y-1] -= 1;
+                    if (viewScale[x - 1, y + 1] > 1)
+                    {
+                        viewScale[x - 1, y + 1] -= 1;
+                    }
+                    else
+                    {
+                        //viewScale[x-8] -= 1;
+                    if (sightingPostStatus[a * (x - 1) + (y + 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x - 1) + (y + 1)] += 1;
                 }
-                else
-                {
-                    //viewScale[x-8] -= 1;
-                    sightingPostStatus[(x+1)*(y-1)] += 1;
-                    processConut += 1;
-                }
-               
             }
-            if (x - 1 >= 0)
+            catch
             {
-                if (viewScale[x - 1,y] >1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x, y - 1] > 1)
                 {
-                    viewScale[x - 1,y] -= 1;
+                    viewScale[x, y - 1] -= 1;
                 }
                 else
                 {
                     //viewScale[x-1] -= 1;
-                    sightingPostStatus[(x-1)*y] += 1;
-                    processConut += 1;
-                }  
+                    if (sightingPostStatus[a * x + (y - 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * x + (y - 1)] += 1;
+                }
             }
-            if (x + 1 < ChooseEye.maxRandomX)
+            catch
             {
-                if (viewScale[x + 1,y]>1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x , y+1] > 1)
                 {
-                    viewScale[x + 1,y] -= 1;
+                    viewScale[x, y+1] -= 1;
                 }
                 else
                 {
                     //viewScale[x+1] -= 1;
-                    sightingPostStatus[(x+1)*y] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * x + (y + 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * x + (y + 1)] += 1;
                 }
-               
             }
-            if (x -1 >=0&&y+1<ChooseEye.maxRandomY)
+            catch
             {
-                if (viewScale[x -1,y+1]>1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x +1 , y - 1] > 1)
                 {
-                    viewScale[x -1,y+1] -= 1;
+                    viewScale[x +1, y - 1] -= 1;
                 }
                 else
                 {
                     //viewScale[x+8] -= 1;
-                    sightingPostStatus[(x-1)*(y+1)] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * (x + 1) + (y - 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x + 1) + (y - 1)] += 1;
                 }
-               
             }
-            if (y+1 < ChooseEye.maxRandomY)
+            catch
             {
-                if (viewScale[x ,y+1]>1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x+1, y ] > 1)
                 {
-                    viewScale[x ,y+1] -= 1;
+                    viewScale[x+1, y ] -= 1;
                 }
                 else
                 {
                     //viewScale[x+9] -= 1;
-                    sightingPostStatus[x*(y+1)] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * (x + 1) + y]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x + 1) + y] += 1;
                 }
-                
             }
-            if (x + 1 < ChooseEye.maxRandomX&&y+1<ChooseEye.maxRandomY)
+            catch
             {
-                if (viewScale[x + 1,y+1]>1)
+                print("越界");
+            }
+            try
+            {
+                if (viewScale[x + 1, y + 1] > 1)
                 {
-                    viewScale[x + 1,y+1] -= 1;
+                    viewScale[x + 1, y + 1] -= 1;
                 }
                 else
                 {
                     //viewScale[x+10] -= 1;
-                    sightingPostStatus[(x+1)*(y+1)] += 1;
-                    processConut += 1;
+                    if (sightingPostStatus[a * (x + 1) + (y + 1)]<2)
+                    {
+                        processConut += 1;
+                    }
+                    sightingPostStatus[a * (x + 1) + (y + 1)] += 1;
                 }
-                
             }
-        }else if (ifClick && sightingPostDisplayStatus[x] == true)
+            catch
+            {
+                print("越界");
+            }
+        }else if (ifClick && sightingPostDisplayStatus[a * x + y] == true)
         {
-            processConut += 1;
-            sightingPostStatus[x*y] += 1;
+            if (sightingPostStatus[a * x + y]<2)
+            {
+                processConut += 1;
+            }
+            sightingPostStatus[a * x + y] += 1;
         }
-        else if (ifClick == false && sightingPostDisplayStatus[x] == false)
+        else if (ifClick == false && sightingPostDisplayStatus[a * x + y] == false)
         {
-            sightingPostStatus[x*y] += 1;
+            sightingPostStatus[a * x + y] += 1;
         }
         ifClick = false;
+        print(" sightingPostStatus：" + sightingPostStatus[a * x + y]);
+        print("processConut："+ processConut);
     }
     //对于固视丢失的定义是，在检查过程中，不时在生理盲点中央呈现高刺激强度的光标，如果受检者有反应，则记录一次固视丢失
     //对应的逻辑就是，当视标状态为true时，若响应状态为true，但是sightingPostDisplayStatus状态为false，则固视丢失次数+1

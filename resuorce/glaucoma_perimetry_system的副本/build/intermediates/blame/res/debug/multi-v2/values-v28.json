@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/Users/lichengyu/Desktop/GraduationProject/app/glaucoma_perimetry_system/src/main/res/values-v28/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "2",
+                        "startOffsets": "53",
+                        "endLines": "4",
+                        "endColumns": "10",
+                        "endOffsets": "226"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "689",
+                        "endLines": "14",
+                        "endColumns": "10",
+                        "endOffsets": "862"
+                    }
+                },
+                {
+                    "source": "/Users/lichengyu/.gradle/caches/transforms-2/files-2.1/8403febb4df7dbbb4ad6e5dd2a06a3e6/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    }
+                }
+            ]
+        }
+    ]
+}

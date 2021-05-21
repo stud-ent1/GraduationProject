@@ -1,9 +1,7 @@
 package com.DefaultCompany.glaucoma_perimetry_system.views;
 
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.HttpController;
-import com.DefaultCompany.glaucoma_perimetry_system.controllers.UnityPlayerController;
+import com.DefaultCompany.glaucoma_perimetry_system.controllers.UnityPlayerDeal;
 import com.DefaultCompany.glaucoma_perimetry_system.entitys.GlobalVal;
-import com.DefaultCompany.glaucoma_perimetry_system.enums.RequestType;
 import com.unity3d.player.*;
 
 import android.app.Activity;
@@ -20,24 +18,18 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Window;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class UnityPlayerActivity extends Activity {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
     private GlobalVal globalVal;
-    private HttpController httpController = new HttpController();
     private SensorManager mSensorManager;
     private Sensor accelerometer;
     private Sensor magnetic;
     private float[] accelerometerValues = new float[3];
     private float[] magneticFieldValues = new float[3];
     private boolean ifExistCamera;
-    private UnityPlayerController unityPlayerController;
+    private UnityPlayerDeal unityPlayerController;
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
     // UnityPlayerActivity calls this from 'onCreate'
@@ -64,7 +56,7 @@ public class UnityPlayerActivity extends Activity {
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         magnetic = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
-        unityPlayerController=new UnityPlayerController(this);
+        unityPlayerController=new UnityPlayerDeal(this);
 
     }
 

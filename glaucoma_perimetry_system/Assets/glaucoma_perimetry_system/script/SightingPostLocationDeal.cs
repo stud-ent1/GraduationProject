@@ -78,7 +78,7 @@ public class SightingPostLocationDeal : MonoBehaviour
             randomY = Random.Range(0,ChooseEye.maxRandomY);
             while (true)
             {
-                if (ThresholdCalculate.sightingPostStatus[randomX*randomY] < 2)
+                if (ThresholdCalculate.sightingPostStatus[9*randomX+randomY] < 2)
                 {
                     break;
                 }
@@ -94,9 +94,8 @@ public class SightingPostLocationDeal : MonoBehaviour
             sightingPost.SetActive(true);
             //设置光点的变化
             float colorFactor=ThresholdCalculate.viewScale[randomX,randomY];
-            print("视标亮度："+colorFactor);
             sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
-            sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[randomX * randomY, 0]/ChooseEye.CV, backgroundY + sightingPostLocation[randomX * randomY, 1]/ ChooseEye.CV, backgroundZ - 0.1f);
+            sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[ChooseEye.maxRandomX*randomX + randomY, 0]/ChooseEye.CV, backgroundY + sightingPostLocation[ChooseEye.maxRandomX * randomX + randomY, 1]/ ChooseEye.CV, backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
             Invoke("wait", 1f);
         }
