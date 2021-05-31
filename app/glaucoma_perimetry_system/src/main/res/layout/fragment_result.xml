@@ -141,7 +141,8 @@
 
                 <ImageView
                     android:id="@+id/grayImgL"
-                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -162,7 +163,8 @@
 
                 <ImageView
                     android:id="@+id/grayImgR"
-                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -194,7 +196,8 @@
 
                 <ImageView
                     android:id="@+id/ratioImgL"
-                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -215,7 +218,8 @@
 
                 <ImageView
                     android:id="@+id/ratioImgR"
-                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
@@ -228,12 +232,16 @@
             </LinearLayout>
         </LinearLayout>
         <Button
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#A1608C"
+            android:textSize="32sp"
+            android:textStyle="bold"
             android:id="@+id/share"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/button_text_share"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:text="@string/button_text_share" />
     </LinearLayout>
 </ScrollView>

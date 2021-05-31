@@ -5,4 +5,7 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="textInputLayout">#96ffffff</color>
+    <color name="alterBackground">#84C9EF</color>
+    <color name="radioGroup">#FCD97D</color>
+    <color name="alterWraning">#FF0000</color>
 </resources>

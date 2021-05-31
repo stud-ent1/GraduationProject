@@ -533,6 +533,8 @@ color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
 color alignment_marker_color
+color alterBackground
+color alterWraning
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -623,6 +625,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color radioGroup
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -714,6 +717,8 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen alignment_marker_height
 dimen alignment_marker_thickness
 dimen cardview_compat_inset_shadow
@@ -942,6 +947,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable app_banner
+drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
 drawable buttonshapewhitebg
@@ -975,6 +981,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable quantum_ic_close_white_24
 drawable quantum_ic_settings_white_24
+drawable radio_group_color
 drawable rippleable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1180,8 +1187,6 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
-id textHelp
-id textHelp1
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1272,7 +1277,16 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout alter
 layout back_button
+layout component_choice
+layout component_choice2
+layout component_choice3
+layout component_login
+layout component_login2
+layout component_main
+layout component_main2
+layout component_result
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1308,6 +1322,7 @@ layout ui_layer
 layout ui_layer_with_portrait_support
 mipmap app_icon
 mipmap app_icon_round
+mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 string abc_action_bar_home_description
@@ -1349,6 +1364,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string back_button_content_description
@@ -1378,6 +1394,7 @@ string game_view_content_description
 string go_to_playstore_button
 string go_to_vr_listeners_settings_button
 string gvr_vr_mode_component
+string hello_world
 string hide_bottom_view_on_scroll_behavior
 string introduce
 string mtrl_chip_close_icon_content_description

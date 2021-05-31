@@ -7,6 +7,7 @@ import sqlite3
 
 from Tools.CommonTool import CommonTool
 from Tools.LoggerTool import information
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 class TableTool(object):
@@ -179,6 +180,35 @@ class TableTool(object):
             return True
         else:
             return False
+
+    def similar(self, a, b):
+        """
+        余弦值相似算法
+        cosθ = a · b / ( ||a||*||b|| )=(x1, y1) · (x2, y2) / (sqrt(x1^2+ y1^2) + sqrt(x2^2+ y2^2))
+        :param a:
+        :param b:
+        :return:
+        """
+        s = cosine_similarity([a], [b])
+        return s[0][0]
+
+    def avg(self, db, table, eye):
+        """
+        求平均值
+        :return:
+        """
+        cu = db.cursor()
+        max_range = 73 if table == "early_data" else 101
+        fields = ""
+        for i in range(1, max_range):
+            fields = fields + f",avg(location{i})"
+        fields = fields[1:]
+        print(fields)
+        cu.execute(f"select {fields} from {table} where eye='{eye}'")
+        arr = cu.fetchall()
+        print(arr)
+        if len(arr) > 0:
+            return arr[0]
 
 
 ct = CommonTool()

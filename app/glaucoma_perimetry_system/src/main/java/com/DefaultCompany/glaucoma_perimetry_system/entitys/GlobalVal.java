@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class GlobalVal extends Application {
     //定义早期视标显示状态数组
-    private  boolean[][] earlySightingPostDisplayStatus = {
+    private boolean[][] earlySightingPostDisplayStatus = {
             {
                     false, false, true, true, true, true, false, false, false,
                     false, true, true, true, true, true, true, false, false,
@@ -29,9 +29,8 @@ public class GlobalVal extends Application {
     };
 
 
-
     //定义晚期视标检测状态数组
-    private  boolean[][] lateSightingPostDisplayStatus =
+    private boolean[][] lateSightingPostDisplayStatus =
             {
                     {
                             false, false, false, false, true, true, false, false, false, false,
@@ -57,8 +56,7 @@ public class GlobalVal extends Application {
                             false, false, false, false, true, true, false, false, false, false}
             };
 
-
-
+    private boolean ifFirstToSee=true;
     private String id;
     private Map<String, Object> map = new HashMap<String, Object>();
     private String eye = "左眼";
@@ -95,6 +93,7 @@ public class GlobalVal extends Application {
     public void setId(String id) {
         this.id = id;
     }
+
     public boolean[][] getEarlySightingPostDisplayStatus() {
         return earlySightingPostDisplayStatus;
     }
@@ -102,6 +101,7 @@ public class GlobalVal extends Application {
     public boolean[][] getLateSightingPostDisplayStatus() {
         return lateSightingPostDisplayStatus;
     }
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -111,5 +111,13 @@ public class GlobalVal extends Application {
         map.put("sightingLoseRatioR", "无数据");
         map.put("falseNegativeRatioR", "无数据");
         map.put("falsePositiveRatioR", "无数据");
+    }
+
+    public boolean isIfFirstToSee() {
+        return ifFirstToSee;
+    }
+
+    public void setIfFirstToSee(boolean ifFirstToSee) {
+        this.ifFirstToSee = ifFirstToSee;
     }
 }

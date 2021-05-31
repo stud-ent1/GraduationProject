@@ -125,6 +125,7 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.binioter:guideview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: :gvr:@aar" level="project" />
     <orderEntry type="library" name="Gradle: :unitygvr:@aar" level="project" />
   </component>

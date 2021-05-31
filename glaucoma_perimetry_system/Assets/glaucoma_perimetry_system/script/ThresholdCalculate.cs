@@ -55,7 +55,7 @@ public class ThresholdCalculate : MonoBehaviour
             {
                 //当viewScale[spld]=1时触发，此时如果在减1，则会导致viewScale[spld]=0
                 //viewScale[spld] -= 1;
-                if (sightingPostStatus[a * x + y]<2)
+                if (sightingPostStatus[a * x + y]<2&& sightingPostDisplayStatus[a * x + y])
                 {
                     processConut += 1;
                 }
@@ -70,7 +70,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x-10] -= 1;
-                    if (sightingPostStatus[a * (x - 1) + (y - 1)]<2)
+                    if (sightingPostStatus[a * (x - 1) + (y - 1)]<2 && sightingPostDisplayStatus[a * (x - 1) + (y - 1)])
                     {
                         processConut += 1;
                     }
@@ -90,7 +90,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x-9] -= 1;
-                    if (sightingPostStatus[a * (x - 1) + y]<2)
+                    if (sightingPostStatus[a * (x - 1) + y]<2 && sightingPostDisplayStatus[a * (x - 1) + y])
                     {
                         processConut += 1;
                     }
@@ -108,7 +108,7 @@ public class ThresholdCalculate : MonoBehaviour
                     else
                     {
                         //viewScale[x-8] -= 1;
-                    if (sightingPostStatus[a * (x - 1) + (y + 1)]<2)
+                    if (sightingPostStatus[a * (x - 1) + (y + 1)]<2 && sightingPostDisplayStatus[a * (x - 1) + (y + 1)])
                     {
                         processConut += 1;
                     }
@@ -128,7 +128,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x-1] -= 1;
-                    if (sightingPostStatus[a * x + (y - 1)]<2)
+                    if (sightingPostStatus[a * x + (y - 1)]<2 && sightingPostDisplayStatus[a * x + (y - 1)])
                     {
                         processConut += 1;
                     }
@@ -148,7 +148,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x+1] -= 1;
-                    if (sightingPostStatus[a * x + (y + 1)]<2)
+                    if (sightingPostStatus[a * x + (y + 1)]<2 && sightingPostDisplayStatus[a * x + (y + 1)])
                     {
                         processConut += 1;
                     }
@@ -168,7 +168,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x+8] -= 1;
-                    if (sightingPostStatus[a * (x + 1) + (y - 1)]<2)
+                    if (sightingPostStatus[a * (x + 1) + (y - 1)]<2 && sightingPostDisplayStatus[a * (x + 1) + (y - 1)])
                     {
                         processConut += 1;
                     }
@@ -188,7 +188,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x+9] -= 1;
-                    if (sightingPostStatus[a * (x + 1) + y]<2)
+                    if (sightingPostStatus[a * (x + 1) + y]<2 && sightingPostDisplayStatus[a * (x + 1) + y])
                     {
                         processConut += 1;
                     }
@@ -208,7 +208,7 @@ public class ThresholdCalculate : MonoBehaviour
                 else
                 {
                     //viewScale[x+10] -= 1;
-                    if (sightingPostStatus[a * (x + 1) + (y + 1)]<2)
+                    if (sightingPostStatus[a * (x + 1) + (y + 1)]<2 && sightingPostDisplayStatus[a * (x + 1) + (y + 1)])
                     {
                         processConut += 1;
                     }

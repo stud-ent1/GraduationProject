@@ -4,30 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#B5D5D0"
     android:orientation="vertical"
-    tools:context=".views.MainActivity">
+    tools:context=".activity.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textHelp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/textView_text_textHelp"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/textHelp1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,27 +23,34 @@
             android:textColor="@android:color/black"
             android:text="检测程序:"/>
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/programsRadioGroup">
 
             <RadioButton
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:checked="true"
+                android:background="@drawable/radio_group_color"
+                android:button="@null"
                 android:textColor="@android:color/black"
                 android:text="24-2(适用于前期)"
                 android:id="@+id/earlyRadioButton"/>
 
             <RadioButton
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textColor="@android:color/black"
+                android:background="@drawable/radio_group_color"
+                android:button="@null"
                 android:text="10-2(适用于后期)"
                 android:id="@+id/lateRadioButton"/>
         </RadioGroup>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,25 +63,31 @@
             android:textColor="@android:color/black"
             android:text="眼睛:"/>
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/eyesRadioGroup">
 
             <RadioButton
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:id="@+id/leftEye"
                 android:checked="true"
+                android:background="@drawable/radio_group_color"
+                android:button="@null"
                 android:textColor="@android:color/black"
                 android:text="左眼" />
 
             <RadioButton
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="right"
                 android:id="@+id/rightEye"
+                android:background="@drawable/radio_group_color"
+                android:button="@null"
                 android:textColor="@android:color/black"
                 android:text="右眼" />
         </RadioGroup>
@@ -103,14 +97,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:orientation="vertical">
+        android:gravity="center">
 
 
         <Button
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:textAllCaps="false"
+            android:textColor="#A1608C"
+            android:textSize="32sp"
+            android:textStyle="bold"
             android:id="@+id/beginCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:text="开始检测" />
     </LinearLayout>
 </LinearLayout>

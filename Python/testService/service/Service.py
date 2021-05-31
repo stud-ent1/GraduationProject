@@ -12,7 +12,7 @@ from Tools.TableTool import TableTool
 app = FastAPI()
 
 
-# uvicorn service.Service:app --host '192.168.1.100' --reload
+# uvicorn service.Service:app --host '42.193.97.77' --reload
 @app.get("/insert")
 def insert_val(val):
     con = tt.connect()
@@ -61,6 +61,9 @@ def select_val(val):
     select_result = {"eye": tmp.get("eye"), "GrayScale": tt.select(con, table, tmp.get("id"), tmp.get("eye"))}
     if select_result["GrayScale"] is not None:
         select_result["RatioScale"] = tt.calculate(con, table, select_result["GrayScale"])
+        a = select_result["GrayScale"].split(",")[5:]
+        avg = tt.avg(con, table, tmp.get("eye"))
+        select_result["avg"] = tt.similar(a, avg)
     else:
         select_result["RatioScale"] = None
     return JSONResponse(content=select_result)

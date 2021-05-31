@@ -50,20 +50,20 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:testOnly="true"
         android:theme="@style/VrActivityTheme" >
-        <activity android:name="com.DefaultCompany.glaucoma_perimetry_system.views.LoginActivity" >
+        <activity android:name="com.DefaultCompany.glaucoma_perimetry_system.activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.DefaultCompany.glaucoma_perimetry_system.views.MainActivity" >
+        <activity android:name="com.DefaultCompany.glaucoma_perimetry_system.activity.MainActivity" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.DefaultCompany.glaucoma_perimetry_system.views.UnityPlayerActivity"
+            android:name="com.DefaultCompany.glaucoma_perimetry_system.activity.UnityPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
             android:hardwareAccelerated="false"
             android:label="@string/app_name"

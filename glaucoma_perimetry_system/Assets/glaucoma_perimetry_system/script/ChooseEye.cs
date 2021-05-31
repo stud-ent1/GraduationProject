@@ -128,7 +128,6 @@ public class ChooseEye : MonoBehaviour
         setCameraStatus();
         //chooseProgram("24-2(适用于前期)");
         //chooseEye("左眼");
-
     }
     //监听选择的眼睛
     void chooseEye(string eye)

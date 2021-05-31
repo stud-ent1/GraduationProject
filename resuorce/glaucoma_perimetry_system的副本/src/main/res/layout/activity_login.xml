@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    tools:context=".views.LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -71,17 +71,6 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/calibri"
-        android:gravity="center"
-        android:text="@string/introduce"
-        android:textColor="#9affffff"
-        android:textSize="20sp" />
 
     <Button
         android:id="@+id/no_send"
@@ -106,12 +95,6 @@
         android:orientation="vertical"
         android:paddingLeft="32dp"
         android:paddingRight="32dp">
-        <TextView
-            android:id="@+id/alterText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="20sp" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

@@ -24,6 +24,8 @@ public class SightingPostLocationDeal : MonoBehaviour
     public static int randomX,randomY;
     //视标是否显示
     public static bool ifSightingDisplay;
+    //定义是否暂停
+    public int a = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +56,10 @@ public class SightingPostLocationDeal : MonoBehaviour
     //点击耳机对应时进行调用
     void quicken()
     {
-        checking();
+        if (ChooseEye.ifClickButton)
+        {
+            checking();
+        }
     }
     //判断是否正在进行一次检测，如果进行，则不调用
     void checking()
@@ -71,7 +76,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     }
     void sightingPostMove()
     {
-        if (ThresholdCalculate.processConut <= ChooseEye.maxCheck)
+        if (ThresholdCalculate.processConut < ChooseEye.maxCheck)
         {
 
             randomX = Random.Range(0, ChooseEye.maxRandomX);
@@ -105,7 +110,7 @@ public class SightingPostLocationDeal : MonoBehaviour
             updateMap();
             //重新加载场景
             restart();
-            jumpToMain();
+           
         }
     }
     //调用android mergeBitmap()合并结果，并传递固视丢失次数，假阴性次数，假阳性次数，以及测试眼睛
@@ -134,9 +139,14 @@ public class SightingPostLocationDeal : MonoBehaviour
         jo.Call("jumpToMain");
 
     }
-    private void restart()
+    public void onPause()
+    {
+        ChooseEye.ifClickButton = !ChooseEye.ifClickButton;
+    }
+    public void restart()
     {
         SceneManager.LoadScene(0);
+        jumpToMain();
     }
     void wait()
     {

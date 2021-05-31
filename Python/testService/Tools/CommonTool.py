@@ -2,6 +2,7 @@
 # @Time    : 2021/5/2 8:06 下午
 # @Author  : lichengyu
 # @File    : CommonTool.py
+import base64
 import subprocess
 
 import yaml
@@ -38,3 +39,9 @@ class CommonTool(object):
             # yaml文件通过---分节，多个节组合成一个列表
             data = yaml.safe_load(f)
         return data
+
+    def encode(self, string):
+        return base64.b64encode(string.encode()).decode()
+
+    def decode(self, string):
+        return base64.b64decode(string).decode()
