@@ -45,7 +45,7 @@ public class DrawGrayImage extends View{
         @Override
         public void draw(Canvas canvas) {
             super.draw(canvas);
-            canvas.drawColor(Color.GRAY);
+            canvas.drawColor(Color.parseColor("#F5F6CE"));
             Paint p = new Paint();
 
             p.setStyle(Paint.Style.FILL);
@@ -70,7 +70,19 @@ public class DrawGrayImage extends View{
                 for (int j = 0; j < width; j += 100) {
                     canvas.translate(j, i);
                     if (sightingPostDisplayStatus[count]) {
-                        p.setColor(Color.rgb(Float.parseFloat(arr[count+5])/3,Float.parseFloat(arr[count+5])/3,Float.parseFloat(arr[count+5])/3));
+                       float color= Float.parseFloat(arr[count+5]);
+                        if(color>=3){
+                            p.setColor(Color.parseColor("#FAFAFA"));
+                        }else if(color>2&&color<3){
+                            p.setColor(Color.parseColor("#D8D8D8"));
+                        }else if(color==2){
+                            p.setColor(Color.parseColor("#848484"));
+                        }else if(color>1&&color<2){
+                            p.setColor(Color.parseColor("#585858"));
+                        }else if(color==1){
+                            p.setColor(Color.parseColor("#2E2E2E"));
+                        }
+
 
                         canvas.drawRect(0,0,100,100,p);
                     }

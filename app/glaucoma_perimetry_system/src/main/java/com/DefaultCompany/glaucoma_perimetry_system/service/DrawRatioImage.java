@@ -45,7 +45,7 @@ public class DrawRatioImage extends View {
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-        canvas.drawColor(Color.GRAY);
+        canvas.drawColor(Color.parseColor("#F5F6CE"));
         Paint p = new Paint();
         p.setColor(Color.BLACK);
         p.setStyle(Paint.Style.FILL);

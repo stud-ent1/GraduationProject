@@ -84,7 +84,7 @@ public class UnityPlayerActivity extends Activity {
                 float y = (float) Math.toDegrees(values[2]);
 
 
-                if (y > -50 && y < -20&&x>-5&&x<5&&ifExistCamera) {
+                if (y > -50 && y < -20&&x>-5&&x<5&&z>-5&&z<5&&ifExistCamera) {
                     Log.i("","检测到点头");
                     Intent intent = getIntent();
                     String eye = intent.getStringExtra("eye");
@@ -210,14 +210,14 @@ public class UnityPlayerActivity extends Activity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_HEADSETHOOK) {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
             UnityPlayer.UnitySendMessage("Background", "ActionUp", "");
             return true;
         }
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
-            UnityPlayer.UnitySendMessage("MainCamera", "quicken", "");
-            return true;
-        }
+//        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+//            UnityPlayer.UnitySendMessage("MainCamera", "quicken", "");
+//            return true;
+//        }
         if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             UnityPlayer.UnitySendMessage("MainCamera", "onPause", "");
             return true;

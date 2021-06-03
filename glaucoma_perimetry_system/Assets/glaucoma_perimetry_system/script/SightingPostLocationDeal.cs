@@ -26,6 +26,10 @@ public class SightingPostLocationDeal : MonoBehaviour
     public static bool ifSightingDisplay;
     //定义是否暂停
     public int a = 1;
+    //定义计时器
+    float fTime;
+    //定义随机数状态
+    public static bool randomStatus;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,9 +49,15 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-        if (ChooseEye.ifClickButton && Time.frameCount % 120 == 0)
+         //判断是否正在进行一次检测，如果进行，则不调用
+        if (ifSightingDisplay == false)
+        {
+            fTime += Time.deltaTime;
+        }
+        if (ChooseEye.ifClickButton && fTime>2f)
         {
             checking();
+            fTime = 0;
         }
     }
     //更新逻辑：加速，点击按钮可以调用检测，每隔2秒也可以调用检测，当检测进行时，如又遇到了检测请求，提供两种策略，一是判断当前的检测状态，如果还未结束，就不进行执行，
@@ -59,6 +69,7 @@ public class SightingPostLocationDeal : MonoBehaviour
         if (ChooseEye.ifClickButton)
         {
             checking();
+            fTime = 0;
         }
     }
     //判断是否正在进行一次检测，如果进行，则不调用
@@ -71,7 +82,7 @@ public class SightingPostLocationDeal : MonoBehaviour
         background.SetActive(true);
         ifSightingDisplay = true;
         sightingPostMove();
-        ifSightingDisplay = false;
+ 
         }
     }
     void sightingPostMove()
@@ -83,8 +94,9 @@ public class SightingPostLocationDeal : MonoBehaviour
             randomY = Random.Range(0,ChooseEye.maxRandomY);
             while (true)
             {
-                if (ThresholdCalculate.sightingPostStatus[9*randomX+randomY] < 2)
+                if (ThresholdCalculate.sightingPostStatus[ChooseEye.maxRandomY * randomX+randomY] < 2)
                 {
+                    randomStatus = true;
                     break;
                 }
                 else
@@ -99,10 +111,11 @@ public class SightingPostLocationDeal : MonoBehaviour
             sightingPost.SetActive(true);
             //设置光点的变化
             float colorFactor=ThresholdCalculate.viewScale[randomX,randomY];
-            sightingPost.GetComponent<MeshRenderer>().material.color = new Color(1.5f/colorFactor,1.5f/colorFactor,1.5f/colorFactor);
+            ChoiceColor(colorFactor);
             sightingPost.transform.localPosition = new Vector3(backgroundX + sightingPostLocation[ChooseEye.maxRandomX*randomX + randomY, 0]/ChooseEye.CV, backgroundY + sightingPostLocation[ChooseEye.maxRandomX * randomX + randomY, 1]/ ChooseEye.CV, backgroundZ - 0.1f);
             Invoke("CloseShow", sightingPostDisplayTime);
-            Invoke("wait", 1f);
+            Invoke("wait", 1.5f);
+           
         }
         else
         {
@@ -152,11 +165,25 @@ public class SightingPostLocationDeal : MonoBehaviour
     {
         ThresholdCalculate.checkFalseNegative();
         ThresholdCalculate.thresholdCalculate(randomX,randomY);
+        ifSightingDisplay = false;
+        randomStatus = false;
     }
     //设置视标不可见
     void CloseShow()
     {
         sightingPost.SetActive(false);
     }
-
+    void ChoiceColor(float color)
+    {
+        Color newColor=new Color();
+        if (color >= 3)
+        {
+            ColorUtility.TryParseHtmlString("#FAFAFA", out newColor);
+        }
+        else if (color<3)
+        {
+            ColorUtility.TryParseHtmlString("#FFFFFF", out newColor);
+        }
+        sightingPost.GetComponent<MeshRenderer>().material.color = newColor;
+    }
 }
