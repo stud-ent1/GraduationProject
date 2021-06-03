@@ -10,134 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74dd731e-1c9e-4f84-b9cd-6646af576049" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/ThresholdCalculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python/testService/.idea/sonarlint/issuestore/3/3/33752d6470591def40fa20d1f72fac4cc6cb5fc7" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/testService/.idea/sonarlint/issuestore/3/3/33752d6470591def40fa20d1f72fac4cc6cb5fc7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/aUTDGFw4EJ2aOEnfyRt_YWj9H88=" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/aUTDGFw4EJ2aOEnfyRt_YWj9H88=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/UnityPlayerActivity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
@@ -145,17 +34,18 @@
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_assets/debug/out/bin/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_activity_login.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_activity_login.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/UnityPlayerActivity.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment$4.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/41/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glaucoma_perimetry_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/glaucoma_perimetry_system.iml" afterDir="false" />
@@ -166,16 +56,16 @@
       <change beforePath="$PROJECT_DIR$/src/main/assets/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/bin/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/assets/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/bin/Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/assets/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/bin/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/assets/bin/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/bin/Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/UnityPlayerActivity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/material/SightingPostColor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/material/SightingPostColor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/scenes/VisualFieldInspection.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/scenes/VisualFieldInspection.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/ChooseEye.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/ChooseEye.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/SightingPostLocationDeal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/SightingPostLocationDeal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/ThresholdCalculate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Assets/glaucoma_perimetry_system/script/ThresholdCalculate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/LastBuild.buildreport" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
@@ -184,7 +74,6 @@
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/PlayerDataCache/Android/Data/sharedassets0.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
@@ -197,13 +86,261 @@
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/StateCache/SceneView/51c0dc-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/StateCache/SceneView/51c0dc-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/27/27d464d6600034dd89c1e5148ce9ae41" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/27/27d464d6600034dd89c1e5148ce9ae41" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/8f/8fa27ac32201f4f94915091b90c4494e.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/8f/8fa27ac32201f4f94915091b90c4494e.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/bd/bda3e38271a6a4df8acc4626a281bc0f" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/bd/bda3e38271a6a4df8acc4626a281bc0f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/dd/dd125da82d49b432dad384b2837fdb58" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/metadata/dd/dd125da82d49b432dad384b2837fdb58" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/UnityEngine.Purchasing.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/Managed/UnityEngine.Purchasing.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/StagingArea/assets/bin/Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-00a8c829b58d84d73a0f9e3f93c715ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-01a7e4b6238d244c28cd2cbc1f2a0c1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-024439b0a74cd4d65a01f47302260e83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-050b45ce1592e4ef59bdec2492f97615" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0655b51960d614bacb4e4593b06ebcf8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-06c39671efa9248238b5f27a9f186d91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-06fbd9808a6004e039083d359927c2d5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-07a29378f3e3e4675a8d35372a6cd194" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0943c4ce0eeda44798c1cc6b38761f5f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-099974d181d8a4cc388dcb8a8fa1c34b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0a2b81ac888394c78bd049ba9dac6eb4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0bcb41796168248fdb99d5ef48d9fc03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0c6d0135bba9342bbaa83d50154e9f18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0dcd736d439804c37aee59507d667b6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0de21f90834dd43ac8dd31132a664747" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0e9988a924d094b479fab2c3a39eba1e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0f8b3d4cee5314901aa542e4a256da54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0fa70f3d1644b4085aa944d039d475a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-0fbfbe76626f14406a336237a7bdb2d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-10f101e51c4e44f6ab5a42046cbb6695" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-112d4c894466e47208f0857a3433faef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1192f8f683be443f88e5a7b8d228efb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-11f997d0995744983b6816d6e54bc528" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-13e3a9a19edf2493987866204447699b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-15c566d710f5c4f999753f557cb1f0a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1618c9eb740694a1a86364a52c1b0a30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-162ce097f5fa34f7b9bfb51d05f7157c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-169c7a782dff7407ca05b12db987ee74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-19235736959ff4dc0b96354b88289aa8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-19d9483ca58bd44638e71906f87e68c4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-19ff5147df53d405fbb8f3f0c3768a8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1b3d1d23981134fada8a1b9fd8736e7d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1c37bc9433f01450bb1dd7bb71ef303c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1c38a403550974ac1a80d882e42a54d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1dba3843b3f774a489a161d1d118bb37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1ef4bcecd24304b11a52c8485e4e4dc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1f094886eac5b4c5484151abe53b6528" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1f858215d8915464999d99ef33d78115" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1f91f47521b7b4755bb93b4931dd3fd4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-1fbf5564d3ce34291bbecf150692d14e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-229402e0105a9414fb219443593e23b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-22ca3acca30c7429ab68ad9f45bf9d77" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-243d870078d75465fb696c0f74845ef8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-244565952597f4cccaf87f54e13774b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-25913f0f90d0845b49112dd751428050" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-25d26874738844506ac6c7030f2032c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2764a0d52d65045798ffcfc5d2d7bd54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2839c1b27d346490db47e6ba47599928" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2909b72ee2ca94568a84ac92895828a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-29c826da4a6b44ac3989290d50f05621" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2a696b5ca738e425a81bfc5286f8ba06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2a80dbe1bb14046618811b246d28768f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2afbf12b2a25a493da7057e88945cf98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2c312113251604dc298de2930b535700" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2c36ebe22d9dd461f9d8c3f587263ec1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2cd4838f8814c4d0c87ea44305af2529" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2eecd9b8fbbf5408a814bb739f9e1150" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2fa4ec1cc8030482192c6cb533a722c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2fba8d03f5ded418583782b0efee0cc9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-2fbbfc921d1fb42dd927215687c83fa9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3097ff48cb0804b73bc9b9a769c08c40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-32e527b679cbf4a59bc620094a6cabb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3310f978b7a3c427ab48ece027b25cd8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-348a8ed5d29d8445cb44352603587ae7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-35129758527214307ac203deb9fe41c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-367dfeed9ff544440bf5001b4ca03390" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3688726649839425f8d34f906d0a6769" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-38f1e4c5766a64820a22103062b8575c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3baa5641a7e12426092b675922484689" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3e36f0ee0c2414ed6aa85aa476587769" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-3f39bd44eadd1440489a76f230ac1226" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-40fb3d5450ae44eeeaa9c24ac68410d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-41e9069ca318f441ab3327c4ef32438d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-43b713bdf20e24a9a8d784811a9a479b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-446ed5196edf14ff58786828be7bd5e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4508b149e3de5465698934343b6027db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-459e11b0d1897438c945309fde6f03f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-475cec82190154ab3a59628c2cdd7418" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4ad0a00182aa44740bb510360a766f61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4bc25e9929e6f4fc084fb61b72dc9b67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4c4493d1039734f419228f183d4c7137" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4e0b9729ad6a948999c2a9cba2694d32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4fbbd8bf7eab64ebb9a815e01a6a2c86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-4fd81c938146e4dcb9b429215b0746d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-50f45ef509ec4473da9e917a701247a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-527b64da38f0945b8a836694d27b5a76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-53b4ab4affb234a1585be72ea5907737" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5420ef244c5fe4a15a76d8d6cd8c8f55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5497fa5adc98a45e083931e8725d73b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-56435ec8f46c44cfb97c60a3963f307a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-56c0d91f0ec1a4d47ab2f601aeb47919" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-571f4249176714912bfb42fa7721bf76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-575c23e69af1c4ffb952336ceeb1df96" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-579d608f3b99d4b47a5bee2dd8a990db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-59b4da34d61fd4a058bbea2de561afad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5b270c05977f74b09ba380a1c5ef180e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5c6863fd117404c79aa4535a585db766" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5d6cf64afe846428f90472a4cd4be8c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5de2c8e9778c8446c8975d058c3b200b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5de7908c67565454cbb15a72894ccc59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5ea301983d8344d52b9f6c85b5965822" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5efaf50b3624d47ecb4f3a448dceec95" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-5fc87714c9c3e456c88349d542456358" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6070045a1eb5845498b31f31b908d232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6224270b74ada46fb84672be0cdad1f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-62abfc9febd954dd4b346dc3433cf58f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-642667bbd2eea4e40972554fbf4e2f52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-64a90a8e24847486c828ce7f79baba3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-65f6a5ba300e94b1a975c68f99a121f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-67baad75cc05640b0971e0c9884593e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6b1de708c6e8948d2939c4c410b74a28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6bc81259d2b0d489e8b9615f40db96fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6d825e7e8143443af85cd4b0d35e0ca3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-6dca30f39d0f241c993dcf1e8a8a5570" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-718e5512ed02145bd8c9a827d531b97d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-73cf7f9c6476245c99f3a923e2eee98d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-73ec238d3d00042769e82de4c168b19a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-75204a6e7c41c4ed8838a42b99422ef5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-7568b2dab30d44eb3b6c6308d69b7c02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-75f5f1e508f2648db81545352e0b13d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-7637b60f06da344699cbbdb8ae0b258c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-76d1cf637474541ef825d104a8c594e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-776a8d83d461540639f2caef24acfcc6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-77bd3610381684fff942598cb6b857e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-780ce54b2cb264fceba65b75d68ef179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-785c42e53a2ae4092a1f496bf64b9e00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-78e1d855b85024803b7e98049067ee56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-78e256f6e8ef442c18ca24551ad9efe9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-793b31ae5fc15468ea466581658d51c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-7cada0c801df6404786caca88ecffa62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-7db0b7b31667e4f3db9a80c6fbf5df48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-7fe6c743de7544e6ba7a8e32f0a59d73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-809f2b85d5b194fe7878f2fd6d7550f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-80c0e656ae2184b01ad62b9eb208d4df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-823ec5e5b8085448192940700002c2dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-84cbc14d289054519972dfebacc278c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-876b157e0fc59495dba18899d1b05108" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-8857f0f8eadb94a3eb75bc4ca3b81be4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-8c5407c0907e24edfbef8984e108294e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-8d6fdd19627b7497bb7e6f79465f680e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-8db06895931df4991a7d253fbf072695" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-8f8c09e1327d7426bb806dc484325360" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-909645906823d40a69f34311db711947" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-91f0baeadeeeb47049126d22d5d7da6e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-929c7bddfb7f84c87bfa3afbbb16b784" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-92e7425901eb34ef9be419eeddc9fc08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-94c4cd8df99044c85a0b3d21966c81ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-95a51047c1d8b45f0abb21a3c2f4ca33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-95d2f0be8341043aaa3f79fcd963eb48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-963a1ef97229d408d8c6e01955ca082c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-970a261f6505148ef97bf9533bb89750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-97b5363e180f54c8b98e025fb3389802" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9a62ec3f552ff49cd87192004bee35ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9a70aaffc4a854a8a99f96b5a2cf0005" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9af0ecedf864645cbb18076aa910f1f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9d62c665c9d0347ff92010630290e86a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9f09f7664ee3c4a51b30884a1d9eeecf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-9f729c7fa67794030bd9c3f7147d7416" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-a1f1555925044407b974fd8267824028" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-a20ff32de73824afdb8abc29f68605f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-a2904db74c5cb49929560c6d1b3e8b28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-a6f3d533c235b4c2986016b5a5822087" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ac7acf1ba2d7e48feae1f7555086c8e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ac94f58c6ed624e27b35b4a3becc3be2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ad1bfcad9d9794e8a90c63521226ed22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ae1a450f742ba4e9791291e610dc5ed4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b01c6af5906a1470391432b4eeb907f6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b0c1d499052df4090991784504551284" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b2b9961e39063452d96022952feff249" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b59cd38fc397247cd8389626dea7c379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b704d7572126f4fb7be50301b2de84c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b7443f7adc655431f90b21d0a4f09f94" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b78f8885c720343fe94a7abfd1605624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b7e1b81d5db834c6da6899eac150a1b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b868d6f7093e14477a1327282897d466" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-b86d4d19688084db89bed7645700079b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-bc28a281933b34a15ac170fd0d7a8bd8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-bcedab10790a744239bc75ace1862b02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-be85dcd1b0be5460d9773d7e99dabe14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-bf0a01c0df3fe49d99aea397071c742a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c072358b6351d4f01a3cc123ad835d9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c13c1b00d6a3d472ab768d5485d95536" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c142f45dfeab147ebae07bd1971d4fd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c34c3715fb0604fa9bd2c0ce27fd68a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c41b4ad2e78264dbf914d2b7bd65f464" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c443ed4125552436797332b57555dc34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c63cbdee7861a4d63bba51522ff2c775" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c69f76c0e0252422991ba5f8971a24bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c7b1f99e9c88b4f65bd23bd453f857f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c7f636191a0fd4e22a3c40c3b1b7104a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c863cea077014457d9fa779dfcc45629" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c8c04979ab1ed47c0a06b4d1a8bc7fa0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c91ace9783f0f43469da7da08e4c6c10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c93059ce8a938445c92a87394f149bf2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-c937ac720975e4d5eb059d1610929e0c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cadbff266ab6c43949a414439c96ad62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cbbd0169caf0c4628a9b2d0bb5ad0044" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ccf3d4b09cd8548bb9377e9b9c98af4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cd42c5e3ee1ee4a55bb4c6d47e4a0ab2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cd85176bd374f4470bb341474cb89926" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cd8db2719ec4046cbbc4398b72864b42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-cf1bbc8bd076f4dc790d040e7315d598" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d0158963f844b46909d1a4f0ab0badbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d0e487412c99b498abb3a471b741feeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d1599926663ce4dc48279e631a906d12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d1ef6f1465cf24ceea451d4a877115dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d52209fab29644174a9f22b9ae82c40c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d56364f77302d4cdbbcacf996000c7ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d6799e6d063e14b36977dac58b29c991" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d762ceaffd9404b84a0431ea54e0a5a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d781d72fa1f224fafaa22e6f03b0cdf3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d87c959aff5f04b1fadd74e0d913f227" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-d9875d7da51e74e548e47a41c136da44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-daa347798b43d46099c24adb76d3d441" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-dac98eb6f888e441cad5fe8648a9bdeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-dbd5f4cf03ca343e3ba0af5c06626412" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-de18cc469e1784ace87ae348269a78d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-dedc135532d8b4e6ab94e06ee309eb14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-dfba8718b10c54e52953529bc129b170" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-e0c064f346b914fb0ad1f6975b68a3a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-e1be0a7827c274bf1baf4433b970ba69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-e52357cbef52f459d8edce535cf63fc8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-e5aa88c1edea74e8790ad0222f91b266" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-e5e58a64ea48944f8a3d13a7066358cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ed0dffd2159744102afedf898e240360" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ef37a7e6194b844b69e2a500615be082" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f28b162eb5e764544bdc3a6d56d57c25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f2925a9b30af24e539200054245b44d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f3104806b4fda4936aab4f825acb14cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f3886cc2d890947e4ae8d8bc27c73da7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f3b104ebd24e94380bbf0027edcc02d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f3bb310c55dee4e128c42cdb59a63da8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f7fe0c87884264e92a37f4bcd8715ecc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f8bfa134762ba44d4b73babc56193d8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-f9df34bebee994e01bd21b65d566787b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fa39c1ab6048546a39577b4acdfd2996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fa4d75db1ed2d48b8acbb197d1dddf25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fa9d438deb81241129dcd68633534cea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fb49bfcae17884d5aa860b37e2f0552d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fd3138fe7963b4cfa9ebde718c24d420" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-fea2e1b9dd5964dcfb7fb5bd9ab562c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/UnityTempFile-ff17b25b05f9e4972bd44a7f07ee8294" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/Temp/__Backupscenes/0.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../glaucoma_perimetry_system/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../glaucoma_perimetry_system/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../resource/LoginUI-Android/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../resource/LoginUI-Android/.idea/caches/build_file_checksums.ser" beforeDir="false" />
@@ -2143,26 +2280,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/UnityPlayerDeal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="120">
+              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -2171,9 +2290,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="466">
               <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
               <folding>
+                <element signature="e#476#494#0" expanded="true" />
                 <element signature="e#1147#1165#0" expanded="true" />
               </folding>
             </state>
@@ -2181,10 +2301,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+              <folding>
+                <element signature="e#5645#5646#0" expanded="true" />
+                <element signature="e#5679#5680#0" expanded="true" />
+                <element signature="e#8641#8642#0" expanded="true" />
+                <element signature="e#8695#8696#0" expanded="true" />
+                <element signature="e#9530#9531#0" expanded="true" />
+                <element signature="e#9584#9585#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_choice.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_result.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="220" column="51" selection-end-line="246" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="270">
+              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="68" selection-start-line="68" selection-end-line="72" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="190" selection-start-line="190" selection-end-line="193" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2484#2485#0" expanded="true" />
+                <element signature="e#2531#2532#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2192,41 +2372,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/CheckAir.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="258">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -2234,8 +2381,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/ids.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -2283,7 +2430,6 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/component_login.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/component_login2.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/alter.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable-xhdpi/radio_group_color.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/loginShowGuideView.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/component_choice.xml" />
@@ -2297,9 +2443,7 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/component_result.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/listeners/OnSwipeTouchListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/enums/AlterType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_result.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/ui/helper/ChoiceComponent2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/ui/helper/ChoiceComponent3.java" />
@@ -2312,23 +2456,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Base64.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/safety.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/CheckId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_choice.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawGrayImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/ids.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="94" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="147" />
+    <option name="y" value="49" />
     <option name="width" value="1440" />
     <option name="height" value="726" />
   </component>
@@ -2338,6 +2485,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2409,14 +2558,13 @@
               <item name="glaucoma_perimetry_system" type="1abcf292:AndroidViewProjectNode" />
               <item name="glaucoma_perimetry_system" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="glaucoma_perimetry_system" type="1abcf292:AndroidViewProjectNode" />
               <item name="glaucoma_perimetry_system" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-              <item name="styles" type="c431d0b8:AndroidResGroupNode" />
             </path>
             <path>
               <item name="glaucoma_perimetry_system" type="1abcf292:AndroidViewProjectNode" />
@@ -2426,8 +2574,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2552,11 +2698,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="94" y="25" width="1440" height="726" extended-state="1" />
+    <frame x="147" y="49" width="1440" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5100671" side_tool="true" weight="0.22961374" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4899329" visible="true" weight="0.22961374" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4899329" visible="true" weight="0.16523606" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50793654" side_tool="true" weight="0.2274678" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -2565,11 +2711,11 @@
       <window_info id="Resources Explorer" order="7" sideWeight="0.49440715" weight="0.3297568" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49928468" weight="0.32484075" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49713877" weight="0.47929937" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49713877" weight="0.83439493" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32484075" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32484075" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5028612" side_tool="true" weight="0.638535" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.36146498" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.46974522" />
       <window_info anchor="bottom" id="Android Profiler" order="6" sideWeight="0.49928468" weight="0.3312102" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4985694" weight="0.42356688" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985694" weight="0.3821656" />
@@ -2610,46 +2756,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_main2.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_login2.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_result.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-30/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -2754,14 +2860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/alter.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/ui/helper/ChoiceComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -2794,41 +2892,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable-xhdpi/good_morning_img.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#showGuideView2#0;class#LoginActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_result.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="220" column="51" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_choice.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/HttpService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -2845,44 +2908,6 @@
           <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="144" column="7" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ResultFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="68" selection-start-line="68" selection-start-column="2" selection-end-line="75" selection-end-column="10" />
-          <folding>
-            <element signature="e#4140#4141#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4826#4827#0" expanded="true" />
-            <element signature="e#4874#4875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2928,30 +2953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/ThresholdCalculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/CheckAir.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -2962,6 +2963,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-30/android/hardware/SensorEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/UnityPlayerDeal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2969,56 +2977,187 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1438">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/Alter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-30/android/hardware/SensorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="1173" column="26" selection-start-line="1173" selection-start-column="26" selection-end-line="1173" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/component_choice3.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/alter.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/ThresholdCalculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/service/DrawRatioImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1111">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ResultFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/entitys/GlobalVal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="114">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="151" column="51" selection-start-line="151" selection-start-column="51" selection-end-line="151" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_choice.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/ChoiceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="68" selection-start-line="68" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="190" selection-start-line="190" selection-end-line="193" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DefaultCompany/glaucoma_perimetry_system/activity/UnityPlayerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="144">
+          <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+          <folding>
+            <element signature="e#5645#5646#0" expanded="true" />
+            <element signature="e#5679#5680#0" expanded="true" />
+            <element signature="e#8641#8642#0" expanded="true" />
+            <element signature="e#8695#8696#0" expanded="true" />
+            <element signature="e#9530#9531#0" expanded="true" />
+            <element signature="e#9584#9585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_result.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="220" column="51" selection-end-line="246" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="466">
           <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
           <folding>
+            <element signature="e#476#494#0" expanded="true" />
             <element signature="e#1147#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/ids.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="270">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
         </state>
       </provider>
     </entry>

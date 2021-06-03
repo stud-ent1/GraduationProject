@@ -59,18 +59,18 @@ public class ChoiceFragment extends Fragment implements View.OnClickListener, Ra
         i.putExtra("program", globalVal.getProgram());
 
 //       if (choiceController.ifExistAir()) {
-//           alter.getAlter(AlterType.beginCheck);
-//           new Thread(){
-//               @Override
-//               public void run() {
-//                   try {
-//                       Thread.sleep(10000);
+           alter.getAlter(AlterType.beginCheck);
+           new Thread(){
+               @Override
+               public void run() {
+                   try {
+                       Thread.sleep(10000);
                        startActivity(i);
-//                   } catch (InterruptedException e) {
-//                       e.printStackTrace();
-//                   }
-//               }
-//           }.start();
+                   } catch (InterruptedException e) {
+                       e.printStackTrace();
+                   }
+               }
+           }.start();
 //        }else {
 //           alter.getAlter(AlterType.notAir);
 //       }

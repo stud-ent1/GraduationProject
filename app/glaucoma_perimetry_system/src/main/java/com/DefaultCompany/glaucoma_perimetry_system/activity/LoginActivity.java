@@ -180,11 +180,16 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     globalVal.setId(null);
                     break;
                 case R.id.register_id:
+                    if (checkId.editTextCheck(id)) {
                     JSONObject jsonObject = new JSONObject();
                     jsonObject.put("id", id);
                     jsonObject.put("passWord", pw);
                     if (httpService.execRequest(RequestType.REGISTER, jsonObject).get("status").equals("fail")) {
                         alter.getAlter(AlterType.idRegister);
+                        return;
+                    }
+                    } else {
+                        alter.getAlter(AlterType.idIllegal);
                         return;
                     }
                     break;

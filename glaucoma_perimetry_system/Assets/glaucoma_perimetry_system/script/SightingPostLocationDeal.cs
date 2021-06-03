@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SightingPostLocationDeal : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class SightingPostLocationDeal : MonoBehaviour
         canvas.SetActive(true);
         sightingPost.SetActive(false);
         background.SetActive(false);
-
+        ifSightingDisplay = false;
     }
 
     // 此处遇到的问题表述一下，这个undate的作用是控制视标的位置，每当时间过去两秒或者ThresholdCalculate中的ifClick的状态为true时(即对视标作出了响应)，
@@ -49,7 +50,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     //如何保证一致性成为一个问题？
     void Update()
     {
-         //判断是否正在进行一次检测，如果进行，则不调用
+        //判断是否正在进行一次检测，如果进行，则不调用
         if (ifSightingDisplay == false)
         {
             fTime += Time.deltaTime;
@@ -155,6 +156,7 @@ public class SightingPostLocationDeal : MonoBehaviour
     public void onPause()
     {
         ChooseEye.ifClickButton = !ChooseEye.ifClickButton;
+        canvas.SetActive(ChooseEye.ifClickButton);
     }
     public void restart()
     {

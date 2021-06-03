@@ -31,6 +31,9 @@ public class UnityPlayerActivity extends Activity {
     private float[] magneticFieldValues = new float[3];
     private boolean ifExistCamera;
     private UnityPlayerDeal unityPlayerController;
+    private static final int UPDATE_INTERVAL = 200;
+    private long mLastUpdateTime;
+    private float mLastX, mLastY, mLastZ;
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
     // UnityPlayerActivity calls this from 'onCreate'
@@ -72,29 +75,48 @@ public class UnityPlayerActivity extends Activity {
                 accelerometerValues = sensorEvent.values;
                 float[] values = new float[3];
                 float[] R = new float[9];
+                //为什么使用加速度传感器与地磁传感器
+                //加速度的方向竖直向下，而不考虑环境影响，磁场的方向是水平朝南北，这样对加速度和磁场坐差乘，就能得到一个水平东西方向的向量，那么就能得到一个三位的向量买就可以用来计算设备的方向
                 SensorManager.getRotationMatrix(R, null, accelerometerValues,
                         magneticFieldValues);
                 SensorManager.getOrientation(R, values);
 
-
+                long currentTime = System.currentTimeMillis();
+                long diffTime = currentTime - mLastUpdateTime;
+                if (diffTime < UPDATE_INTERVAL) {
+                    return;
+                }
+                mLastUpdateTime = currentTime;
                 float z = (float) Math.toDegrees(values[0]);
 
                 float x = (float) Math.toDegrees(values[1]);
 
                 float y = (float) Math.toDegrees(values[2]);
 
-
-                if (y > -50 && y < -20&&x>-5&&x<5&&z>-5&&z<5&&ifExistCamera) {
-                    Log.i("","检测到点头");
-                    Intent intent = getIntent();
-                    String eye = intent.getStringExtra("eye");
-                    String program = intent.getStringExtra("program");
-                    UnityPlayer.UnitySendMessage("MainCamera", "chooseProgram", program);
-                    UnityPlayer.UnitySendMessage("MainCamera", "chooseEye", eye);
-                    UnityPlayer.UnitySendMessage("MainCamera", "ifStartCheck", "");
-                    mSensorManager.unregisterListener(mSensorEventListener);
+                float deltaX = x - mLastX;
+                float deltaY = y - mLastY;
+                float deltaZ = z - mLastZ;
+                mLastX = x;
+                mLastY = y;
+                mLastZ = z;
+                if(deltaY>30&&deltaX<5&&ifExistCamera){
+                        Log.i("","检测到点头");
+                        if (globalVal.isIfStartCheck()){
+                            Intent intent = getIntent();
+                            String eye = intent.getStringExtra("eye");
+                            String program = intent.getStringExtra("program");
+                            UnityPlayer.UnitySendMessage("MainCamera", "chooseProgram", program);
+                            UnityPlayer.UnitySendMessage("MainCamera", "chooseEye", eye);
+                            UnityPlayer.UnitySendMessage("MainCamera", "ifStartCheck", "");
+                            globalVal.setIfStartCheck(false);
+                        }else {
+                            UnityPlayer.UnitySendMessage("Background", "ActionUp", "");
+                        }
                 }
-
+//                if(deltaX<5&&ifExistCamera&&deltaY<5&&deltaZ>30){
+//                        Log.i("","检测到摇头");
+//                        UnityPlayer.UnitySendMessage("MainCamera", "onPause", "");
+//                }
 
             }
 
@@ -115,8 +137,10 @@ public class UnityPlayerActivity extends Activity {
     }
 
     void jumpToMain() {
+        globalVal.setIfStartCheck(true);
         Intent i = new Intent(UnityPlayerActivity.this, MainActivity.class); //切换窗口
         startActivity(i);
+        mSensorManager.unregisterListener(mSensorEventListener);
     }
 
     @Override
@@ -146,6 +170,7 @@ public class UnityPlayerActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        globalVal.setIfStartCheck(true);
         mSensorManager.registerListener(mSensorEventListener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(mSensorEventListener, magnetic, SensorManager.SENSOR_DELAY_NORMAL);
         mUnityPlayer.resume();

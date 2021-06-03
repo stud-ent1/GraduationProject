@@ -52,7 +52,7 @@ public class Alter {
                 textView.setTextColor(Color.RED);
                 break;
             case beginCheck:
-                textView.setText("即将开始进入到检测界面，请将手机放入到VR眼镜中并佩戴，期间如果看到闪烁光点，请按下耳机中键进行响应，如需暂停检测，请按下耳机后退键");
+                textView.setText("即将开始进入到检测界面，请将手机放入到VR眼镜中并佩戴，期间如果看到闪烁光点，请按下点头，如需暂停检测，请摇头");
                 textView.setTextColor(Color.BLUE);
                 break;
     }

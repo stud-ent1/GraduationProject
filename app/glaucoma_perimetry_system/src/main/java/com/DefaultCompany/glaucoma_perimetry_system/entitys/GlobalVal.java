@@ -56,7 +56,10 @@ public class GlobalVal extends Application {
                             false, false, false, false, true, true, false, false, false, false}
             };
 
-    private boolean ifFirstToSee=true;
+    private boolean ifFirstToSee = true;
+    private boolean ifStartCheck = true;
+
+
     private String id;
     private Map<String, Object> map = new HashMap<String, Object>();
     private String eye = "左眼";
@@ -119,5 +122,13 @@ public class GlobalVal extends Application {
 
     public void setIfFirstToSee(boolean ifFirstToSee) {
         this.ifFirstToSee = ifFirstToSee;
+    }
+
+    public boolean isIfStartCheck() {
+        return ifStartCheck;
+    }
+
+    public void setIfStartCheck(boolean ifStartCheck) {
+        this.ifStartCheck = ifStartCheck;
     }
 }
