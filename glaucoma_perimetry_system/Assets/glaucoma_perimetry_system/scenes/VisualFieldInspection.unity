@@ -243,7 +243,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364446599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 4.9}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 608197457}
@@ -285,7 +285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BF7\u6309\u70B9\u5934\uFF0C\u4EE5\u786E\u8BA4\u5F00\u59CB\u6D4B\u8BD5"
+  m_Text: "\u8BF7\u786E\u8BA4\u5F00\u59CB\u6D4B\u8BD5"
 --- !u!222 &364446602
 CanvasRenderer:
   m_ObjectHideFlags: 0
